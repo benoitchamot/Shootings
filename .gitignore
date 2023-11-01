@@ -1,3 +1,12 @@
+# Data under license
+*.csv
+
+# Test and scratch files
+Scratch.ipynb
+
+# Large files
+raw_data/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
