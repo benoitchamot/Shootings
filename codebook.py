@@ -137,6 +137,116 @@ codes_shooter_background_community = {
 }
 
 ###### CRIME AND VIOLENCE ######################################################
+# Known to Police or FBI
+codes_shooter_crime_known = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Criminal Record
+codes_shooter_crime_record = {
+    0: 'No evidence',
+    1: 'Yes'   
+}
+
+# Part 1 Crimes
+codes_shooter_crime_part1 = {
+    0: 'No evidence',
+    1: 'Homicide',
+    2: 'Forcible rape',
+    3: 'Robbery',
+    4: 'Aggravated Assault',
+    5: 'Burglary',
+    6: 'Larceny-Theft',
+    7: 'Motor Vehicle Theft',
+    8: 'Arson',
+}
+
+# Part 2 Crimes
+codes_shooter_crime_part2 = {
+    0: 'No evidence',
+    1: 'Simple assault',
+    2: 'Fraud, forgery, embezzlement',
+    3: 'Stolen property',
+    4: 'Vandalism',
+    5: 'Weapons offenses',
+    6: 'Prostitution or other non-rape sex offenses',
+    7: 'Drugs',
+    8: 'DUI',
+    9: 'Other'
+}
+
+# Highest level of criminal justice involvement
+codes_shooter_crime_justice = {
+    0: 'NA',
+    1: 'Suspected',
+    2: 'Arrested',
+    3: 'Charged',
+    4: 'Convicted'
+}
+
+# Animal Abuse
+codes_shooter_crime_animal = {
+    0: 'No evidence',
+    1: 'Yes'    
+}
+
+# History of Physical Altercations
+codes_shooter_crime_physical = {
+    0: 'No evidence',
+    1: 'Yes',
+    2: 'Attacked inanimate objects during arguments '
+}
+
+# History of domestic abuse
+codes_shooter_crime_abuse = {
+    0: 'No evidence',
+    1: 'Abused romantic partner',
+    2: 'Abused other family member(s)'
+}
+
+# History of sexual offenses 
+codes_shooter_crime_sexual = {
+    0: 'No evidence',
+    1: 'Yes',
+}
+
+# Gang association
+codes_shooter_crime_gang = {
+    0: 'No evidence',
+    1: 'Yes',
+}
+
+# Terror group association
+codes_shooter_crime_terror = {
+    0: 'No evidence',
+    1: 'Yes',
+}
+
+# Hate group association
+codes_shooter_crime_hate = {
+    0: 'No evidence',
+    1: 'Hate group community association',
+    2: 'Other radical group association',
+    3: 'Inspired by a hate group but no direct connection',
+    4: 'Website or chat room postings relating to hate or hate groups'
+}
+
+# Played violent video games
+codes_shooter_crime_games = {
+    0: 'No evidence',
+    1: 'Yes',
+    2: 'Played unspecified video games',
+    3: 'NA (pre-1992)'
+}
+
+# Bullly
+codes_shooter_crime_bully = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+
 
 
 ###### CODES FOR FIREARMS ########################################################################
