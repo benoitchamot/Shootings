@@ -363,7 +363,6 @@ codes_shooter_crisis_trigger = {
     6: 'Other'
 }
 
-
 # Signs of being in crisis
 codes_shooter_crisis_signs = {
     0: 'No evidence',
@@ -433,6 +432,124 @@ codes_shooter_crisis_paranoia = {
     1: 'Yes'
 }
 
+###### HEALTH AND MENTAL HEALTH ###################################################
+# Suicidality
+codes_shooter_health_suicide = {
+    0: 'No evidence',
+    1: 'Yes, at any point before the shooting',
+    2: 'Intended to die in shooting but had no previous suicidality'
+}
+
+# Hospitalization for psychiatric reasons
+codes_shooter_health_hospital = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Voluntary or involuntary hospitalization
+codes_shooter_health_voluntarryhospital = {
+    0: 'NA',
+    1: 'Voluntary',
+    2: 'Involuntary'
+}
+
+# Prior counseling
+codes_shooter_health_counseling = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Voluntary or mandatory counseling
+codes_shooter_health_mandatorycounseling = {
+    0: 'NA',
+    1: 'Voluntary',
+    2: 'Involuntary'
+}
+
+# Prescribed psychiatric medication
+codes_shooter_health_medication = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Treatment
+codes_shooter_health_treatment = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Mental illness
+codes_shooter_health_illness = {
+    0: 'No evidence',
+    1: 'Mood disorder',
+    2: 'Thought disorder',
+    3: 'Other psychiatric disorder',
+    4: 'Indication of psychiatric disorder but no diagnosis'
+}
+
+# FASD (Fetal Alcohol Spectrum Disorder)
+codes_shooter_health_fasd = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Known family history of mental health issues
+codes_shooter_health_family = {
+    0: 'No evidence',
+    1: 'Parents had mental health issues',
+    2: 'Other close relatives had mental health issues'
+}
+
+# Autism spectrum disorder
+codes_shooter_health_autism = {
+    0: 'No evidence',
+    1: 'Diagnosed or extremely likely'
+}
+
+# Substance use and abuse
+codes_shooter_health_substance = {
+    0: 'No evidence',
+    1: 'Problem with alcohol',
+    2: 'Marijuana',
+    3: 'Other drugs'
+}
+
+# Health issues
+codes_shooter_health_issues = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Head injury / Possible brain injury
+codes_shooter_health_head = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+###### OTHER ###################################################
+# Known prejudices
+codes_shooter_other_prejudices = {
+    0: 'No evidence',
+    1: 'Racism',
+    2: 'Misogyny',
+    3: 'Homophobia',
+    4: 'Religious hatred'
+}
+
+# Notable or obsessive interest in firearms
+codes_shooter_other_interest = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Firearm proficiency
+codes_shooter_other_proficiency = {
+    -1: 'Unknown',
+    0: 'No experience',
+    1: 'Some experience',
+    2: 'More experienced',
+    3: 'Very experienced'
+}
 
 
 ###### CODES FOR FIREARMS ########################################################################
