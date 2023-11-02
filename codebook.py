@@ -246,6 +246,110 @@ codes_shooter_crime_bully = {
     1: 'Yes'
 }
 
+###### TRAUMA AND ADVERSE CHILDHOOD EXPERIENCES ##########################################
+# Bullied
+codes_shooter_trauma_bully = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Raised by single parent
+codes_shooter_trauma_singleparent = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Parental separation or divorce
+codes_shooter_trauma_divorce = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Suicide of parent
+codes_shooter_trauma_suicide = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Death of parent
+codes_shooter_trauma_death = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Childhood trauma
+codes_shooter_trauma_childtrauma = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Physical Abuse
+codes_shooter_trauma_physical = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Sexual Abuse
+codes_shooter_trauma_sexual = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Emotional Abuse
+codes_shooter_trauma_emotional = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Neglect
+codes_shooter_trauma_neglect = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Childhood socioeconomic status
+codes_shooter_trauma_ses = {
+    -1: 'Unknown',
+    0: 'Lower class',
+    1: 'Middle class',
+    2: 'Upper class'
+}
+
+# Mother was violently treated
+codes_shooter_trauma_violence = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Parent substance abuse
+codes_shooter_trauma_substance = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Parent criminal record
+codes_shooter_trauma_criminal = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Family member incarcerated
+codes_shooter_trauma_prison = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Adult trauma
+codes_shooter_trauma_adulttrauma = {
+    0: 'No evidence',
+    1: 'Death of a parent causing significant distress',
+    2: 'Death or loss of a child',
+    3: 'Death of a family member causing significant distress',
+    4: 'Trauma from war',
+    5: 'Traumatic accident',
+    6: 'Other trauma'
+}
+
 
 
 
