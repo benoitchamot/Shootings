@@ -4,7 +4,142 @@ def replace_code_by_value(df, field, codes_dict):
         df.loc[df[field]==key,field] = codes_dict[key]
         
 
-###### CODES FOR FIREARMS ######
+###### CODES FOR SHOOTERS ########################################################################
+###### BACKGROUND ######################################################
+# Gender codes
+codes_shooter_background_gender = {
+     0: 'Male',
+     1: 'Female',
+     3: 'Non-Binary',
+     4: 'Transgender'
+}
+
+# Race codes
+codes_shooter_background_race = {
+    -1: 'Unknown',
+    0: 'White',
+    1: 'Black',
+    2: 'Latinx',
+    3: 'Asian',
+    4: 'Middle Eastern',
+    5: 'Native American'     
+}
+
+# Immigrant codes
+codes_shooter_background_immigrant = {
+    -1: 'Unknown',
+    0: 'No',
+    1: 'Yes',    
+}
+
+# Sexual orientation codes
+codes_shooter_background_sexorient = {
+    -1: 'Unknown',
+    0: 'Heterosexual',
+    1: 'Not Heterosexual' 
+}
+
+# Religion codes
+codes_shooter_background_religion = {
+    -1: 'Unknown',
+    0: 'None',
+    1: 'Christian',  
+    2: 'Muslim',  
+    3: 'Buddhist',  
+    4: 'Other',  
+    5: 'Jewish'  
+}
+
+# Education codes
+codes_shooter_background_education = {
+    -1: 'Unknown',
+    0: 'Less than high school',
+    1: 'High school/GED',
+    2: 'Some college/trade school',
+    3: "Bachelor's degree",
+    4: 'Graduate school/advanced degree',
+}
+
+# School performance code
+codes_shooter_background_schoolperf = {
+    -1: 'Unknown',
+    0: 'Poor',
+    1: 'Average',
+    2: 'Good'
+}
+
+# Birth order code
+codes_shooter_background_birth = {
+    -1: 'Unknown',
+    0: 'Only child',
+    1: 'Oldest child',
+    2: 'Middle child',
+    3: 'Youngest child',
+    4: 'Twin'
+}
+
+# Relationship status code
+codes_shooter_background_birth = {
+    -1: 'Unknown',
+    0: 'Single',
+    1: 'Boyfriend/girlfriend',
+    2: 'Married',
+    3: 'Divorced/separated/widowed'
+}
+
+# Children code
+codes_shooter_background_children = {
+    0: 'No evidence',
+    1: 'Yes',
+}
+
+# Employment status code
+codes_shooter_background_employstatus = {
+    -1: 'Unknown',
+    0: 'Not working',
+    1: 'Working'
+}
+
+# Employment type code
+codes_shooter_background_employtype = {
+    -1: 'Unknown',
+    0: 'Blue collar',
+    1: 'White collar',
+    2: 'In between'
+}
+
+# Military service code
+codes_shooter_background_milservice = {
+    -1: 'Unknown',
+    0: 'No',
+    1: 'Yes',
+    2: 'Joined but did not make it through training'
+}
+
+# Military branch code
+codes_shooter_background_milbranch = {
+    -1: 'NA',
+    0: 'Army',
+    1: 'Navy',
+    2: 'Air Force',
+    3: 'Marines',
+    4: 'Coast Guard',
+    5: 'National Guard'
+}
+
+# Community involvement code
+codes_shooter_background_community = {
+    0: 'No evidence',
+    1: 'Somewhat involved',
+    2: 'Heavily involved',
+    3: 'Recently withdrawn'
+
+}
+
+###### CRIME AND VIOLENCE ######################################################
+
+
+###### CODES FOR FIREARMS ########################################################################
 # Classification codes
 codes_firearm_classification = {
     0: 'Handgun',
