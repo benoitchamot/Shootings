@@ -2,6 +2,16 @@
 import pandas as pd
 from pathlib import Path
 
+def find_keyword_in_list(keyword, llist):
+
+    finds = []
+
+    for c in llist:
+        if keyword in c:
+            finds.append(c)
+
+    return finds
+
 def dataset_info(df):
 # Create a DataFrame to contain all the information about the dataset
     # Get the columns from the dataset
