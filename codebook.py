@@ -350,6 +350,88 @@ codes_shooter_trauma_adulttrauma = {
     6: 'Other trauma'
 }
 
+###### SIGNS OF A CRISIS #######################################################
+# Recent stressor / triggering event
+codes_shooter_crisis_trigger = {
+    -1: 'Unknown',
+    0: 'No evidence',
+    1: 'Recent break-up',
+    2: 'Employment stressor',
+    3: 'Economic stressor',
+    4: 'Family issue',
+    5: 'Legal issue',
+    6: 'Other'
+}
+
+
+# Signs of being in crisis
+codes_shooter_crisis_signs = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Timeframe of when signs of crisis began
+codes_shooter_crisis_timeframe = {
+    -1: 'Unknown',
+    0: 'Days before shooting',
+    1: 'Weeks before shooting',
+    2: 'Months before shooting',
+    3: 'Years before shooting'
+}
+
+# Inability to perform daily tasks
+codes_shooter_crisis_inability = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Notably depressed mood
+codes_shooter_crisis_depressed = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Unusually calm or happy
+codes_shooter_crisis_calm = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Rapid mood swings
+codes_shooter_crisis_swings = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Increased agitation
+codes_shooter_crisis_agitation = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Abusive behavior
+codes_shooter_crisis_abusive = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Isolation
+codes_shooter_crisis_isolation = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Losing touch with reality 
+codes_shooter_crisis_reality = {
+    0: 'No evidence',
+    1: 'Yes'
+}
+
+# Paranoia
+codes_shooter_crisis_paranoia = {
+    0: 'No evidence',
+    1: 'Yes'
+}
 
 
 
