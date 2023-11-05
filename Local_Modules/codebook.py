@@ -1,7 +1,23 @@
+import pandas as pd
+
+###### FUNCTION ##################################################################################
 def replace_code_by_value(df, field, codes_dict):
     # Replace code by explicit value for each code in field
     for key in list(codes_dict.keys()):
         df.loc[df[field]==key,field] = codes_dict[key]
+
+def get_distribution(df, field, codes):
+# Return a DataFrame with counts and distribution (percent)
+# In: DataFrame to analyse
+# In: Field of DataFrame to analyse (string)
+# In: Codes to replace numerical values by categorical values
+# Out: DataFrame with: Value | Count | Percent
+    if codes:
+        replace_code_by_value(df, field, codes)
+    stat_df = pd.DataFrame(df[field].value_counts())
+    total_count = stat_df[field].sum()
+    stat_df['Percent'] = 100*stat_df[field]/total_count
+    return stat_df
         
 
 ###### CODES FOR SHOOTERS ########################################################################
@@ -642,4 +658,65 @@ codes_firearm_theft = {
 codes_firearm_unknown = {
     0: 'No',
     1: 'Yes'
+}
+
+###### CODES FOR US STATES ########################################################################
+codes_states = {
+    'Alabama': 'AL',
+    'Kentucky': 'KY',
+    'Ohio': 'OH',
+    'Alaska': 'AK',
+    'Louisiana': 'LA',
+    'Oklahoma': 'OK',
+    'Arizona': 'AZ',
+    'Maine': 'ME',
+    'Oregon': 'OR',
+    'Arkansas': 'AR',
+    'Maryland': 'MD',
+    'Pennsylvania': 'PA',
+    'American Samoa': 'AS',
+    'Massachusetts': 'MA',
+    'Puerto Rico': 'PR',
+    'California': 'CA',
+    'Michigan': 'MI',
+    'Rhode Island': 'RI',
+    'Colorado': 'CO',
+    'Minnesota': 'MN',
+    'South Carolina': 'SC',
+    'Connecticut': 'CT',
+    'Mississippi': 'MS',
+    'South Dakota': 'SD',
+    'Delaware': 'DE',
+    'Missouri': 'MO',
+    'Tennessee': 'TN',
+    'District of Columbia': 'DC',
+    'Montana': 'MT',
+    'Texas': 'TX',
+    'Florida': 'FL',
+    'Nebraska': 'NE',
+    'Trust Territories': 'TT',
+    'Georgia': 'GA',
+    'Nevada': 'NV',
+    'Utah': 'UT',
+    'Guam': 'GU',
+    'New Hampshire': 'NH',
+    'Vermont': 'VT',
+    'Hawaii': 'HI',
+    'New Jersey': 'NJ',
+    'Virginia': 'VA',
+    'Idaho': 'ID',
+    'New Mexico': 'NM',
+    'Virgin Islands': 'VI',
+    'Illinois': 'IL',
+    'New York': 'NY',
+    'Washington': 'WA',
+    'Indiana': 'IN',
+    'North Carolina': 'NC',
+    'West Virginia': 'WV',
+    'Iowa': 'IA',
+    'North Dakota': 'ND',
+    'Wisconsin': 'WI',
+    'Kansas': 'KS',
+    'Northern Mariana Islands': 'MP',
+    'Wyoming': 'WY'
 }
