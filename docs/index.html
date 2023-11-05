@@ -23,7 +23,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 p-5">
                     <h3>State</h3>
                     <p>Please select the state where the enquiry takes place.</p>
                     <select onchange="get_state(this.value)">
@@ -85,61 +85,67 @@
                     <p>Please select an age bracket for the prospect.</p>
                     <select onchange="get_age(this.value)">
                         <option>Under 10 years old</option>
-                        <option>10 to 14 years old</option>
-                        <option>15 to 17 years old</option>
-                        <option>18 and 19 years old</option>
-                        <option>20 years old</option>
-                        <option>21 years old</option>
-                        <option>22 to 24 years old</option>
-                        <option>25 to 29 years old</option>
-                        <option>30 to 34 years old</option>
-                        <option>35 to 39 years old</option>
-                        <option>40 to 44 years old</option>
-                        <option>45 to 49 years old</option>
-                        <option>50 to 54 years old</option>
-                        <option>55 to 59 years old</option>
-                        <option>60 and 61 years old</option>
-                        <option>62 to 64 years old</option>
-                        <option>65 and 66 years old</option>
-                        <option>67 to 69 years old</option>
-                        <option>70 to 74 years old</option>
-                        <option>75 years and over old</option>
+                        <option value="10 to 14 years">10 to 14 years old</option>
+                        <option value="15 to 17 years">15 to 17 years old</option>
+                        <option value="18 and 19 years">18 and 19 years old</option>
+                        <option value="20 years">20 years old</option>
+                        <option value="21 years">21 years old</option>
+                        <option value="22 to 24 years">22 to 24 years old</option>
+                        <option value="25 to 29 years">25 to 29 years old</option>
+                        <option value="30 to 34 years">30 to 34 years old</option>
+                        <option value="35 to 39 years">35 to 39 years old</option>
+                        <option value="40 to 44 years">40 to 44 years old</option>
+                        <option value="45 to 49 years">45 to 49 years old</option>
+                        <option value="50 to 54 years">50 to 54 years old</option>
+                        <option value="55 to 59 years">55 to 59 years old</option>
+                        <option value="60 and 61 years">60 and 61 years old</option>
+                        <option value="62 to 64 years">62 to 64 years old</option>
+                        <option value="65 and 66 years">65 and 66 years old</option>
+                        <option value="67 to 69 years">67 to 69 years old</option>
+                        <option value="70 to 74 years">70 to 74 years old</option>
+                        <option value="75 years and over">75 years and over</option>
                     </select>
                     <br/><hr/>
                 
                     <h3>Mental Illness</h3>
                     <p>Does the prospect suffer from any mental illness?</p>
                     
-                    <input type="radio" id="no" name="mental" value="no" onchange="check_mental(this.value)">
+                    <input type="radio" id="no" name="mental" value=0 onchange="check_mental(this.value)">
                     <label for="no">No evidence</label><br>
-                    <input type="radio" id="yes" name="mental" value="yes" onchange="check_mental(this.value)">
+                    <input type="radio" id="yes" name="mental" value=1 onchange="check_mental(this.value)">
                     <label for="yes">Yes</label>
                     <br/><hr/>
                 
                     <h3>Employed</h3>
                     <p>Is the prospect currently employed?</p>
                     
-                    <input type="radio" id="no" name="employment" value="no" onchange="check_employment(this.value)">
+                    <input type="radio" id="no" name="employment" value=0 onchange="check_employment(this.value)">
                     <label for="no">No evidence</label><br>
-                    <input type="radio" id="yes" name="employment" value="yes" onchange="check_employment(this.value)">
+                    <input type="radio" id="yes" name="employment" value=1 onchange="check_employment(this.value)">
                     <label for="yes">Yes</label>
                     <br/><hr/>
                 
                     <h3>Arrested</h3>
                     <p>Has the prospect ever been arrested in the past 12 months?</p>
-                    <input type="radio" id="no" name="arrested" value="no" onchange="check_arrested(this.value)">
+                    <input type="radio" id="no" name="arrested" value=0 onchange="check_arrested(this.value)">
                     <label for="no">No evidence</label><br>
-                    <input type="radio" id="yes" name="arrested" value="yes" onchange="check_arrested(this.value)">
+                    <input type="radio" id="yes" name="arrested" value=1 onchange="check_arrested(this.value)">
                     <label for="yes">Yes</label>
                     <br/><hr/>
                 
                     <h3>Autism</h3>
                     <p>Is the prospect on the autism spectrum?</p>
-                    <input type="radio" id="no" name="autism" value="no" onchange="check_autism(this.value)">
+                    <input type="radio" id="no" name="autism" value=0 onchange="check_autism(this.value)">
                     <label for="no">No evidence</label><br>
-                    <input type="radio" id="yes" name="autism" value="yes" onchange="check_autism(this.value)">
+                    <input type="radio" id="yes" name="autism" value=1 onchange="check_autism(this.value)">
                     <label for="yes">Yes</label>
                     <br/><hr/>
+                </div>
+
+                <div class="col-md-8 p-5">
+                    <h2>Risk</h2>
+                    <h3 id="risk_category"></h3>
+                    <p id="risk_value"></p>
                 </div>
                 
             </div>
