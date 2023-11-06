@@ -95,7 +95,7 @@ codes_shooter_background_birth = {
 }
 
 # Relationship status code
-codes_shooter_background_birth = {
+codes_shooter_background_relationship = {
     -1: 'Unknown',
     0: 'Single',
     1: 'Boyfriend/girlfriend',
@@ -111,9 +111,9 @@ codes_shooter_background_children = {
 
 # Employment status code
 codes_shooter_background_employstatus = {
-    -1: 'Unknown',
-    0: 'Not working',
-    1: 'Working'
+    '-1': 'Unknown',
+    '0': 'Not working',
+    '1': 'Working'
 }
 
 # Employment type code
@@ -496,11 +496,11 @@ codes_shooter_health_treatment = {
 
 # Mental illness
 codes_shooter_health_illness = {
-    0: 'No evidence',
-    1: 'Mood disorder',
-    2: 'Thought disorder',
-    3: 'Other psychiatric disorder',
-    4: 'Indication of psychiatric disorder but no diagnosis'
+    '0': 'No evidence',
+    '1': 'Mood disorder',
+    '2': 'Thought disorder',
+    '3': 'Other psychiatric disorder',
+    '4': 'Indication of psychiatric disorder but no diagnosis'
 }
 
 # FASD (Fetal Alcohol Spectrum Disorder)
@@ -511,9 +511,9 @@ codes_shooter_health_fasd = {
 
 # Known family history of mental health issues
 codes_shooter_health_family = {
-    0: 'No evidence',
-    1: 'Parents had mental health issues',
-    2: 'Other close relatives had mental health issues'
+    '0': 'No evidence',
+    '1': 'Parents had mental health issues',
+    '2': 'Other close relatives had mental health issues'
 }
 
 # Autism spectrum disorder
