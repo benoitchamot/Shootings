@@ -9,7 +9,6 @@ let risk = 1;
 
 function displayRisk(data) {
     let total_risk = data.Risk[0]*data.Risk[1]*data.Risk[2]*data.Risk[3]*data.Risk[4]
-    console.log(total_risk);
 
     if (age_bracket == 'Under 10 years old' || age_bracket == '10 to 14 years' || age_bracket == '15 to 17 years') {
         d3.select('#risk_category').text("Not allowed")
