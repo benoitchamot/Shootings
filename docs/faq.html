@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome to the Jungle</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link href="static/css/style.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="title-container" class="container">
+
+            <div id="title-banner">
+                <h1>Make America Safe... Again?</h1>
+            </div>
+            <div id="title-menu">
+                <ul>
+                    <li><a href="index.html">OpenBox</a></li>
+                    <li><a href="blackbox.html">BlackBox</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="row" id="content">
+
+                <div class="col-md-12" id="div-faq">
+                    <h1>FAQ</h1>
+                    <h2>Why use this tool?</h2>
+                    <ul>
+                        <li>To better understand the factors affecting the risks of an individual committing a mass shooting</li>
+                        <li>To assess criteria to be used in firearms license background checks</li>
+                    </ul>
+                    <h2>Who is this tool for?</h2>
+                    <p>This tool can be used by individuals interested in firearms, gun shop owners or regulators, among others.</p>
+                    
+                    <h2>What is OpenBox?</h2>
+                    <p>OpenBox is our simplest model. It looks only at a small set of variables
+                        to determine the risk caused by a certain individual.
+                    </p>
+                    
+                    <h2>What is BlackBox?</h2>
+                    <p>BlackBox is a more complex model that uses Machine Learning (ML) to determine
+                        whether an individual poses a risk or not. It looks at a more extensive set 
+                        of variables. Its name comes from the fact that it is less straightforward to 
+                        understand the impact of one specifc variable on the overall risk.
+                    </p>
+                    
+                    <h2>Should I use OpenBox or BlackBox?</h2>
+                    <table style="width:80%">
+                        <thead>
+                            <tr>
+                                <th>OpenBox</th>
+                                <th>BlackBox</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Only a small amount of information is known</td>
+                                <td>A lot of information is known</td>
+                            </tr>
+                            <tr>
+                                <td>Process only one prospect at a time</td>
+                                <td>Can process many prospects at once</td>
+                            </tr>
+                            <tr>
+                                <td>Provide results as a risk factor (subjective)</td>
+                                <td>Provide results as a probability (more objective)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>How to use OpenBox?</h2>
+                    <p>Simply enter the information you have about the prospect in the input fields on the left.
+                    The risk level is automatically updated as the inputs are changed.</p>
+
+                    <h2>How to use BlackBox?</h2>
+
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-md-12" id="div-footer">
+                    <hr>
+                    <p>GitHub</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="static/js/openbox.js"></script>
+
+    </body>
+
+</html>
