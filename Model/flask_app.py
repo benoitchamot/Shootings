@@ -30,12 +30,13 @@ risk_df = pd.read_csv(csv)
 #########################################################
 
 # Determine risk
-def get_risk(risk_df, state, age_bracket, mental_illness, employment, arrest, autism):
+def openbox_get_risk(risk_df, state, age_bracket, mental_illness, employment, arrest, autism):
     # Filter based on state
     filtered_df = risk_df.loc[risk_df['State']==state,:]
 
     risk_age = filtered_df[age_bracket].values[0]
 
+    # Default values
     risk_mental = 1
     risk_employment = 1
     risk_arrest = 1
@@ -76,7 +77,7 @@ CORS(app)
 @app.route("/api/v1.0/openbox/<state>/<age_bracket>/<mental_illness>/<employment>/<arrest>/<autism>")
 def api_openbox(state, age_bracket, mental_illness, employment, arrest, autism):
 
-    total_tisk = get_risk(risk_df, state, age_bracket, mental_illness, employment, arrest, autism)
+    total_tisk = openbox_get_risk(risk_df, state, age_bracket, mental_illness, employment, arrest, autism)
 
     return jsonify({'Risk': total_tisk})
 
