@@ -1,3 +1,7 @@
+.container {
+    width: 100%;
+}
+
 #title-banner {
     background-color: brown;
     padding: 0px;
@@ -66,4 +70,9 @@
     font-size: 20px;
     padding: 0px;
     margin: 0px;
+}
+
+#csvtable {
+    font-size: 12px;
+    width:100%;
 }

@@ -13,6 +13,9 @@
         <!-- CSS -->
         <link href="static/css/style.css" rel="stylesheet">
 
+        <!-- jQuery -->
+        <script src="static/js/jquery-3.7.1.min.js"></script>
+
     </head>
     <body>
         <div id="title-container" class="container">
@@ -30,128 +33,65 @@
 
             <div class="row" id="content">
                 <div class="col-md-4" id="div-inputs">
-                    <h3>State</h3>
-                    <p>Please select the state where the enquiry takes place.</p>
-                    <select onchange="get_state(this.value)">
-                        <option>AK</option>
-                        <option>AL</option>
-                        <option>AR</option>
-                        <option>AZ</option>
-                        <option>CA</option>
-                        <option>CO</option>
-                        <option>CT</option>
-                        <option>DC</option>
-                        <option>DE</option>
-                        <option>FL</option>
-                        <option>GA</option>
-                        <option>HI</option>
-                        <option>IA</option>
-                        <option>ID</option>
-                        <option>IL</option>
-                        <option>IN</option>
-                        <option>KS</option>
-                        <option>KY</option>
-                        <option>LA</option>
-                        <option>MA</option>
-                        <option>MD</option>
-                        <option>ME</option>
-                        <option>MI</option>
-                        <option>MN</option>
-                        <option>MO</option>
-                        <option>MS</option>
-                        <option>MT</option>
-                        <option>NC</option>
-                        <option>ND</option>
-                        <option>NE</option>
-                        <option>NH</option>
-                        <option>NJ</option>
-                        <option>NM</option>
-                        <option>NV</option>
-                        <option>NY</option>
-                        <option>OH</option>
-                        <option>OK</option>
-                        <option>OR</option>
-                        <option>PA</option>
-                        <option>RI</option>
-                        <option>SC</option>
-                        <option>SD</option>
-                        <option>TN</option>
-                        <option>TX</option>
-                        <option>UT</option>
-                        <option>VA</option>
-                        <option>VT</option>
-                        <option>WA</option>
-                        <option>WI</option>
-                        <option>WV</option>
-                        <option>WY</option>
-                    </select>
-                    <br/><hr/>
-                
-                    <h3>Age</h3>
-                    <p>Please select an age bracket for the prospect.</p>
-                    <select onchange="get_age(this.value)">
-                        <option>Under 10 years old</option>
-                        <option value="10 to 14 years">10 to 14 years old</option>
-                        <option value="15 to 17 years">15 to 17 years old</option>
-                        <option value="18 and 19 years">18 and 19 years old</option>
-                        <option value="20 years">20 years old</option>
-                        <option value="21 years">21 years old</option>
-                        <option value="22 to 24 years">22 to 24 years old</option>
-                        <option value="25 to 29 years">25 to 29 years old</option>
-                        <option value="30 to 34 years">30 to 34 years old</option>
-                        <option value="35 to 39 years">35 to 39 years old</option>
-                        <option value="40 to 44 years">40 to 44 years old</option>
-                        <option value="45 to 49 years">45 to 49 years old</option>
-                        <option value="50 to 54 years">50 to 54 years old</option>
-                        <option value="55 to 59 years">55 to 59 years old</option>
-                        <option value="60 and 61 years">60 and 61 years old</option>
-                        <option value="62 to 64 years">62 to 64 years old</option>
-                        <option value="65 and 66 years">65 and 66 years old</option>
-                        <option value="67 to 69 years">67 to 69 years old</option>
-                        <option value="70 to 74 years">70 to 74 years old</option>
-                        <option value="75 years and over">75 years and over</option>
-                    </select>
-                    <br/><hr/>
-                
-                    <h3>Mental Illness</h3>
-                    <p>Does the prospect suffer from any mental illness?</p>
-                    
-                    <input type="radio" id="no" name="mental" value=0 onchange="check_mental(this.value)">
-                    <label for="no">No evidence</label><br>
-                    <input type="radio" id="yes" name="mental" value=1 onchange="check_mental(this.value)">
-                    <label for="yes">Yes</label>
-                    <br/><hr/>
-                
-                    <h3>Employed</h3>
-                    <p>Is the prospect currently employed?</p>
-                    
-                    <input type="radio" id="no" name="employment" value=0 onchange="check_employment(this.value)">
-                    <label for="no">No evidence</label><br>
-                    <input type="radio" id="yes" name="employment" value=1 onchange="check_employment(this.value)">
-                    <label for="yes">Yes</label>
-                    <br/><hr/>
-                
-                    <h3>Arrested</h3>
-                    <p>Has the prospect ever been arrested in the past 12 months?</p>
-                    <input type="radio" id="no" name="arrested" value=0 onchange="check_arrested(this.value)">
-                    <label for="no">No evidence</label><br>
-                    <input type="radio" id="yes" name="arrested" value=1 onchange="check_arrested(this.value)">
-                    <label for="yes">Yes</label>
-                    <br/><hr/>
-                
-                    <h3>Autism</h3>
-                    <p>Is the prospect on the autism spectrum?</p>
-                    <input type="radio" id="no" name="autism" value=0 onchange="check_autism(this.value)">
-                    <label for="no">No evidence</label><br>
-                    <input type="radio" id="yes" name="autism" value=1 onchange="check_autism(this.value)">
-                    <label for="yes">Yes</label>
-                    <br/><hr/>
+                    <h3>Add Data</h3>
+                    <p>Please select the CSV file with your data.</p>
+                    <input type="file" id="csvfile" />  
+                    <input type="button" id="viewfile" value="Upload" onclick="loadData()" />
                 </div>
 
-                <div class="col-md-8" id="div-risk">
+                <div class="col-md-3" id="div-inputs">
+                    <h3>Identify Risk</h3>
+                    <p>Run model on your data.</p>
+                    <input type="submit" value="Identify" onclick="loopThroughTable()" />
+                </div>
+
+                <div class="col-md-3" id="div-inputs">
+                    <h3>Delete Data</h3>
+                    <p>Remove all data from table.</p>
+                    <input type="submit" value="Clear" onclick="clearTable()" />
+                </div>
+
+                <div class="col-md-2" id="div-inputs">
+                </div>
+
+                <div class="col-md-12" id="div-inputs">
+                    <hr/>
+                </div>
+                
+            </div>
+            <div class="row" id="content">
+
+                <div class="col-md-12" id="div-risk">
                     <h1>Risk</h1>
                     <h3 id="risk_category"></h3>
                     <p id="risk_value"></p>
+
+                    <table id="csvtable">  
+                        <thead>  
+                            <tr>  
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Race</th>
+                                <th>Immigrant</th>
+                                <th>Education</th>
+                                <th>RelStatus</th>
+                                <th>Employed</th>
+                                <th>Work</th>
+                                <th>MilService</th>
+                                <th>Arrested</th>
+                                <th>ParentDivorce</th>
+                                <th>SES</th>
+                                <th>MentalIllness</th>
+                                <th>MentalIllnessHistory</th>
+                                <th>Autism</th>
+                                <th>HealthIssues</th>
+                                <th>Classification</th>
+                                <th>Probability</th>
+                            </tr>  
+                        </thead>  
+                        <tbody></tbody>  
+                    </table>
+
                 </div>
                 
             </div>
@@ -165,7 +105,7 @@
         </div>
 
         <script src="https://d3js.org/d3.v7.min.js"></script>
-        <script src="static/js/openbox.js"></script>
+        <script src="static/js/blackbox.js"></script>
 
     </body>
 
