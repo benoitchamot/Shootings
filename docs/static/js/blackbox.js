@@ -32,7 +32,12 @@ function loadData() {
                     //Looping through each cell in a csv row    
                     for (var j = 0; j < csvcols.length; j++) {  
                         var cols = "<td>" + csvcols[j] + "</td>";  
-                        row += cols;  
+                        row += cols;
+
+                        // Add an extra column at the end for the probability
+                        if (j == csvcols.length-1) {
+                            row += "<td></td>"
+                        }
                     }  
          
                     row += "</tr>";  
@@ -51,6 +56,13 @@ function loadData() {
     } else {  
         alert("Please upload a valid CSV file!");  
     }  
+}
+
+function displayRisk(data) {
+    // Select current row
+    let row = d3.select(`#csvtable>tbody>tr:nth-child(${data.ID})`);
+    row.select('td:nth-child(17)').text(data.Classification);
+    row.select('td:nth-child(18)').text(data.Probability);
 }
 
 function loopThroughTable() {
@@ -79,5 +91,28 @@ function loopThroughTable() {
         let MentalIllnessHistory = row.select('td:nth-child(14)').text();
         let Autism = row.select('td:nth-child(15)').text();
         let HealthIssues = row.select('td:nth-child(16)').text();
+
+        // Get classification and probability
+        risk_url = 'http://127.0.0.1:5000/api/v1.0/blackbox/' + i + '/' + Age + '/' 
+                            + Gender + '/'
+                            + Race + '/'
+                            + Immigrant + '/'
+                            + Education.replaceAll("/", "+") + '/'
+                            + RelStatus.replaceAll("/", "+") + '/'
+                            + Employed + '/' 
+                            + Work + '/' 
+                            + MilService + '/' 
+                            + Arrested + '/' 
+                            + ParentDivorce + '/' 
+                            + SES + '/' 
+                            + MentalIllness + '/'
+                            + MentalIllnessHistory + '/'
+                            + Autism + '/'
+                            + HealthIssues;
+
+        // Get probability from API
+        d3.json(risk_url).then(displayRisk);
     }
+
+    alert("Analysis completed.")
 }
