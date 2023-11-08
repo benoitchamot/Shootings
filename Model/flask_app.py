@@ -24,11 +24,13 @@ from model_blacbox import predict_with_blackbox
 # Database Setup
 #########################################################
 
-# Load data from CSV file into pandas DataFrame
-# Create engine to movies_db.sqlite
-print("Connecting to database...")
-ob_db_path = Path('openbox_db.sqlite')
-engine_openbox = create_engine(f"sqlite:///{ob_db_path}")
+# Path to databases
+ob_db_path1 = Path('openbox_db.sqlite')
+ob_db_path2 = Path('blackbox_db.sqlite')
+
+# Create engine to openbox_db.sqlite
+print("Connecting to openbox_db...")
+engine_openbox = create_engine(f"sqlite:///{ob_db_path1}")
 print("Connected.")
 
 # Reflect the database into a new model
@@ -49,6 +51,30 @@ except Exception as inst:
 # Save references to each table
 riskmatrix = Base_openbox.classes.riskmatrix
 
+# Create engine to blackbox_db.sqlite
+print("Connecting to blackbox_db...")
+engine_blackbox = create_engine(f"sqlite:///{ob_db_path2}")
+print("Connected.")
+
+# Reflect the database into a new model
+print("Reflecting database...")
+Base_blackbox = automap_base()
+print("Done.")
+
+# Reflect the tables
+print("Reflecting tables...")
+try:
+	Base_blackbox.prepare(engine_blackbox, reflect=True)
+	print("Done.")
+except Exception as inst:
+    print(f"\nError: {inst}")
+    print("\n*** HINT: please run script from within Server directory ***\n")
+    quit()
+
+# Save references to each table
+shooters = Base_blackbox.classes.shooters
+analysis = Base_blackbox.classes.analysis
+
 
 #########################################################
 # Functions
@@ -57,13 +83,9 @@ riskmatrix = Base_openbox.classes.riskmatrix
 # Determine risk
 def openbox_get_risk(state, age_bracket, mental_illness, employment, arrest, autism):
 
-    print(state)
-
     # Open session to the database
     session = Session(bind=engine_openbox)
     risk_in_state = session.query(riskmatrix).filter(riskmatrix.state == str(state))[0]
-
-    print(risk_in_state)
 
     # Get risk for age bracket lookup table
     risk_age_lookup = {
@@ -134,6 +156,32 @@ CORS(app)
 def api_home():
     return "Make America Safe... Again?"
 
+
+#########################################################
+# Flask Static Routes
+#########################################################
+@app.route("/api/v1.0/blackbox/clear")
+def api_blackbox_clear():
+    # Open session to the database
+    session = Session(bind=engine_blackbox)
+
+    try:
+        # Delete rows in analysis table
+        session.query(analysis).delete()
+
+        # Commit changes to session
+        session.commit()
+
+        # Close session
+        session.close()
+        return "0"
+    
+    except Exception as error:
+        # Close session
+        session.close()
+        print(error)
+        return str(error)
+
 #########################################################
 # Flask Dynamic Routes
 #########################################################
@@ -148,6 +196,37 @@ def api_openbox(state, age_bracket, mental_illness, employment, arrest, autism):
 @app.route("/api/v1.0/blackbox/<id>/<Age>/<Gender>/<Race>/<Immigrant>/<Education>/<RelStatus>/<Employed>/<Work>/<MilService>/<Arrested>/<ParentDivorce>/<SES>/<MentalIllness>/<MentalIllnessHistory>/<Autism>/<HealthIssues>")
 def api_blackbox(id, Age, Gender, Race, Immigrant, Education, RelStatus, Employed, Work, MilService, Arrested, ParentDivorce, SES, MentalIllness, MentalIllnessHistory, Autism, HealthIssues):
 
+    # Add line to database
+    # Open session to the database
+    session = Session(bind=engine_blackbox)
+
+    # Add data to database
+    session.add(analysis(
+        Age = Age,
+        Gender = Gender,
+        Race = Race,
+        Immigrant = Immigrant,
+        Education = Education,
+        RelStatus = RelStatus,
+        Employed = Employed,
+        Work = Work,
+        MilService = MilService,
+        Arrested = Arrested,
+        ParentDivorce = ParentDivorce,
+        SES = SES,
+        MentalIllness = MentalIllness,
+        MentalIllnessHistory = MentalIllnessHistory,
+        Autism = Autism,
+        HealthIssues = HealthIssues,
+    ))
+
+    # Commit changes to session
+    session.commit()
+
+    # Close session
+    session.close()
+
+    # Run classification model
     classification, probability = predict_with_blackbox(Age, Gender, Race, Immigrant, Education, RelStatus, Employed, Work, MilService, Arrested, ParentDivorce, SES, MentalIllness, MentalIllnessHistory, Autism, HealthIssues)
 
     # Return classification (1 or 0) and probability of individual of being classified 1
