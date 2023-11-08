@@ -28,18 +28,18 @@ from model_blacbox import predict_with_blackbox
 # Create engine to movies_db.sqlite
 print("Connecting to database...")
 ob_db_path = Path('openbox_db.sqlite')
-engine = create_engine(f"sqlite:///{ob_db_path}")
+engine_openbox = create_engine(f"sqlite:///{ob_db_path}")
 print("Connected.")
 
 # Reflect the database into a new model
 print("Reflecting database...")
-Base = automap_base()
+Base_openbox = automap_base()
 print("Done.")
 
 # Reflect the tables
 print("Reflecting tables...")
 try:
-	Base.prepare(engine, reflect=True)
+	Base_openbox.prepare(engine_openbox, reflect=True)
 	print("Done.")
 except Exception as inst:
     print(f"\nError: {inst}")
@@ -47,7 +47,7 @@ except Exception as inst:
     quit()
 
 # Save references to each table
-riskmatrix = Base.classes.riskmatrix
+riskmatrix = Base_openbox.classes.riskmatrix
 
 
 #########################################################
@@ -60,7 +60,7 @@ def openbox_get_risk(state, age_bracket, mental_illness, employment, arrest, aut
     print(state)
 
     # Open session to the database
-    session = Session(bind=engine)
+    session = Session(bind=engine_openbox)
     risk_in_state = session.query(riskmatrix).filter(riskmatrix.state == str(state))[0]
 
     print(risk_in_state)
