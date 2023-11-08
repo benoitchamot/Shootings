@@ -25,19 +25,72 @@ from model_blacbox import predict_with_blackbox
 #########################################################
 
 # Load data from CSV file into pandas DataFrame
-csv = Path('model_openbox_risks.csv')
-risk_df = pd.read_csv(csv)
+# Create engine to movies_db.sqlite
+print("Connecting to database...")
+ob_db_path = Path('openbox_db.sqlite')
+engine = create_engine(f"sqlite:///{ob_db_path}")
+print("Connected.")
+
+# Reflect the database into a new model
+print("Reflecting database...")
+Base = automap_base()
+print("Done.")
+
+# Reflect the tables
+print("Reflecting tables...")
+try:
+	Base.prepare(engine, reflect=True)
+	print("Done.")
+except Exception as inst:
+    print(f"\nError: {inst}")
+    print("\n*** HINT: please run script from within Server directory ***\n")
+    quit()
+
+# Save references to each table
+riskmatrix = Base.classes.riskmatrix
+
 
 #########################################################
 # Functions
 #########################################################
 
 # Determine risk
-def openbox_get_risk(risk_df, state, age_bracket, mental_illness, employment, arrest, autism):
-    # Filter based on state
-    filtered_df = risk_df.loc[risk_df['State']==state,:]
+def openbox_get_risk(state, age_bracket, mental_illness, employment, arrest, autism):
 
-    risk_age = filtered_df[age_bracket].values[0]
+    print(state)
+
+    # Open session to the database
+    session = Session(bind=engine)
+    risk_in_state = session.query(riskmatrix).filter(riskmatrix.state == str(state))[0]
+
+    print(risk_in_state)
+
+    # Get risk for age bracket lookup table
+    risk_age_lookup = {
+        'Under 10 years old': risk_in_state.age_Under_10,
+        '10 to 14 years': risk_in_state.age_10_to_14,
+        '15 to 17 years': risk_in_state.age_15_to_17,
+        '18 and 19 years': risk_in_state.age_18_and_19,
+        '20 years': risk_in_state.age_20,
+        '21 years': risk_in_state.age_21,
+        '22 to 24 years': risk_in_state.age_22_to_24,
+        '25 to 29 years': risk_in_state.age_25_to_29,
+        '30 to 34 years': risk_in_state.age_30_to_34,
+        '35 to 39 years': risk_in_state.age_35_to_39,
+        '40 to 44 years': risk_in_state.age_40_to_44,
+        '45 to 49 years': risk_in_state.age_45_to_49,
+        '50 to 54 years': risk_in_state.age_50_to_54,
+        '55 to 59 years': risk_in_state.age_55_to_59,
+        '60 and 61 years': risk_in_state.age_60_and_61,
+        '62 to 64 years': risk_in_state.age_62_to_64,
+        '65 and 66 years': risk_in_state.age_65_and_66,
+        '67 to 69 years': risk_in_state.age_67_to_69,
+        '70 to 74 years': risk_in_state.age_70_to_74,
+        '75 years and over': risk_in_state.age_75_over
+    }
+    
+    # Get risk for age bracket based on lookup table
+    risk_age = risk_age_lookup[age_bracket]
 
     # Default values
     risk_mental = 1
@@ -45,23 +98,24 @@ def openbox_get_risk(risk_df, state, age_bracket, mental_illness, employment, ar
     risk_arrest = 1
     risk_autism = 1
 
+    # Update values based on risk matrix
     if mental_illness == '1':
-        risk_mental = filtered_df['Mental_Illness_Risk'].values[0]
+        risk_mental = risk_in_state.mental_illness
     elif mental_illness == '0':
         risk_mental = 1
 
     if employment == '1':
         risk_employment = 1
     elif employment == '0':
-        risk_employment = filtered_df['Unemployment_Risk'].values[0]
+        risk_employment = risk_in_state.unemployment
 
     if arrest == '1':
-        risk_arrest = filtered_df['Arrest_Risk'].values[0]
+        risk_arrest = risk_in_state.arrest
     elif arrest == '1':
         risk_arrest = 1
 
     if autism == '1':
-        risk_autism = filtered_df['Autism_Risk'].values[0]
+        risk_autism = risk_in_state.autism
     elif autism == '1':
         risk_autism = 1
 
@@ -84,7 +138,7 @@ def api_home():
 @app.route("/api/v1.0/openbox/<state>/<age_bracket>/<mental_illness>/<employment>/<arrest>/<autism>")
 def api_openbox(state, age_bracket, mental_illness, employment, arrest, autism):
 
-    total_tisk = openbox_get_risk(risk_df, state, age_bracket, mental_illness, employment, arrest, autism)
+    total_tisk = openbox_get_risk(state, age_bracket, mental_illness, employment, arrest, autism)
 
     return jsonify({'Risk': total_tisk})
 
