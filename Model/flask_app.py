@@ -119,6 +119,9 @@ def openbox_get_risk(state, age_bracket, mental_illness, employment, arrest, aut
     elif autism == '1':
         risk_autism = 1
 
+    # Close session
+    session.close()
+
     return [risk_age, risk_mental, risk_employment, risk_arrest, risk_autism]
 
 #########################################################

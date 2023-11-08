@@ -116,7 +116,7 @@
                     <h3>Mental Illness</h3>
                     <p>Does the prospect suffer from any mental illness?</p>
                     
-                    <input type="radio" id="no" name="mental" value=0 onchange="check_mental(this.value)">
+                    <input type="radio" id="no" name="mental" value=0 onchange="check_mental(this.value)" checked="checked">
                     <label for="no">No evidence</label><br>
                     <input type="radio" id="yes" name="mental" value=1 onchange="check_mental(this.value)">
                     <label for="yes">Yes</label>
@@ -125,15 +125,15 @@
                     <h3>Employed</h3>
                     <p>Is the prospect currently employed?</p>
                     
+                    <input type="radio" id="yes" name="employment" value=1 onchange="check_employment(this.value)" checked="checked">
+                    <label for="yes">Yes</label><br>
                     <input type="radio" id="no" name="employment" value=0 onchange="check_employment(this.value)">
-                    <label for="no">No evidence</label><br>
-                    <input type="radio" id="yes" name="employment" value=1 onchange="check_employment(this.value)">
-                    <label for="yes">Yes</label>
+                    <label for="no">No evidence</label>
                     <br/><hr/>
                 
                     <h3>Arrested</h3>
                     <p>Has the prospect ever been arrested in the past 12 months?</p>
-                    <input type="radio" id="no" name="arrested" value=0 onchange="check_arrested(this.value)">
+                    <input type="radio" id="no" name="arrested" value=0 onchange="check_arrested(this.value)" checked="checked">
                     <label for="no">No evidence</label><br>
                     <input type="radio" id="yes" name="arrested" value=1 onchange="check_arrested(this.value)">
                     <label for="yes">Yes</label>
@@ -141,7 +141,7 @@
                 
                     <h3>Autism</h3>
                     <p>Is the prospect on the autism spectrum?</p>
-                    <input type="radio" id="no" name="autism" value=0 onchange="check_autism(this.value)">
+                    <input type="radio" id="no" name="autism" value=0 onchange="check_autism(this.value)" checked="checked">
                     <label for="no">No evidence</label><br>
                     <input type="radio" id="yes" name="autism" value=1 onchange="check_autism(this.value)">
                     <label for="yes">Yes</label>
@@ -149,9 +149,14 @@
                 </div>
 
                 <div class="col-md-8" id="div-risk">
-                    <h1>Risk</h1>
+                    <h1>Risk Factor</h1>
                     <h3 id="risk_category"></h3>
                     <p id="risk_value"></p>
+                    <div id="gauge"></div>
+                    <p id="p_mental"></p>
+                    <p id="p_employ"></p>
+                    <p id="p_arrest"></p>
+                    <p id="p_autism"></p>
                 </div>
                 
             </div>
@@ -165,7 +170,10 @@
         </div>
 
         <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="static/js/openbox_gauge.js"></script>
         <script src="static/js/openbox.js"></script>
+        
 
     </body>
 
