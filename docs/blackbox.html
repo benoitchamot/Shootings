@@ -36,19 +36,21 @@
                     <h3>Add Data</h3>
                     <p>Please select the CSV file with your data.</p>
                     <input type="file" id="csvfile" />  
-                    <input type="button" id="viewfile" value="Upload" onclick="loadData()" />
+                    <input type="button" id="viewfile" value="Upload" onclick="upload()" />
+                </div>
+
+                <div class="col-md-3" id="div-inputs">
+                    <h3>Database Actions</h3>
+                    <p>View or Remove data.</p>
+                    <input type="button" value="View" onclick="updateFromDatabase()" />
+                    <input type="button" value="Clear" onclick="clearTable()" />
+                    <p id="database_entry_count"></p>
                 </div>
 
                 <div class="col-md-3" id="div-inputs">
                     <h3>Identify Risk</h3>
                     <p>Run model on your data.</p>
-                    <input type="submit" value="Identify" onclick="loopThroughTable()" />
-                </div>
-
-                <div class="col-md-3" id="div-inputs">
-                    <h3>Delete Data</h3>
-                    <p>Remove all data from table.</p>
-                    <input type="submit" value="Clear" onclick="clearTable()" />
+                    <input type="submit" value="Identify" onclick="identify()" />
                 </div>
 
                 <div class="col-md-2" id="div-inputs">

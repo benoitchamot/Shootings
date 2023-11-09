@@ -9,6 +9,7 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func, desc
 from pathlib import Path
+import pickle
 
 # CORS
 from flask_cors import CORS
@@ -17,8 +18,6 @@ from flask_cors import CORS
 import warnings
 warnings.simplefilter(action='ignore')
 
-# Import local modules
-from model_blacbox import predict_with_blackbox
 
 #########################################################
 # Database Setup
@@ -146,6 +145,153 @@ def openbox_get_risk(state, age_bracket, mental_illness, employment, arrest, aut
 
     return [risk_age, risk_mental, risk_employment, risk_arrest, risk_autism]
 
+def create_data_dict(row):
+# Create a dictionary from a row
+	return {'Age': row.Age,
+			   'Gender': row.Gender,
+			   'Race': row.Race,
+			   'Immigrant': row.Immigrant,
+			   'Education': row.Education,
+			   'RelStatus': row.RelStatus,
+			   'Employed': row.Employed,
+			   'Work': row.Work,
+			   'MilService': row.MilService,
+			   'Arrested': row.Arrested,
+			   'ParentDivorce': row.ParentDivorce,
+			   'SES': row.SES,
+			   'MentalIllness': row.MentalIllness,
+			   'MentalIllnessHistory': row.MentalIllnessHistory,
+			   'Autism': row.Autism,
+               'HealthIssues': row.HealthIssues,
+               'Classification': row.Classification,
+               'Probability': row.Probability}
+
+def predict_with_blackbox():
+    # Load model from file
+    with open('blackbox.model','rb') as f:
+        model_1 = pickle.load(f)
+
+    # Open session to the database
+    session = Session(bind=engine_blackbox)
+
+    # Get all data from table
+    all_rows = session.query(analysis)
+
+	# Loop through the measurements
+    for row in all_rows:    
+    	# Add the data to a dictionary
+        row_dict = create_data_dict(row)
+
+        # Create a DataFrame to hold the data
+        input_data = pd.DataFrame([row_dict])
+
+        # Get dummies
+        dummies_df = pd.get_dummies(input_data.drop(columns=['Age']))
+        X = pd.concat([input_data['Age'], dummies_df], axis=1)
+
+        # Get features from dataset
+        dataset_features = X.columns
+
+        # Get names of necessary features
+        model_features = model_1.feature_names_in_
+
+        # Create empty list to store missing features
+        missing_features = []
+
+        # Create empty list to store extra features
+        extra_features = []
+
+        # Check if the dataset is missing features
+        if len(dataset_features) < len(model_features):
+
+            # Loop through model features
+            for feature in model_features:
+                # Check if feature is missing and add missing feature to the list
+                if feature not in dataset_features:
+                    missing_features.append(feature)
+
+        # Check if the dataset has too many features
+        elif len(dataset_features) > len(model_features):
+
+            # Loop through dataset features
+            for feature in dataset_features:
+                # Check if feature is missing and add missing feature to the list
+                if feature not in model_features:
+                    extra_features.append(feature)
+
+        # If the number of features is the same, make sure they are identical
+        if len(dataset_features) == len(model_features):
+            
+            # Loop through dataset features
+            for feature in dataset_features:
+                # Check if feature is extra and add extra feature to the list
+                if feature not in model_features:
+                    extra_features.append(feature)
+
+            # Loop through model features
+            for feature in model_features:
+                # Check if feature is missing and add missing feature to the list
+                if feature not in dataset_features:
+                    missing_features.append(feature)
+
+        # Add missing features to dataset with value of 0
+        for mf in missing_features:
+            X[mf] = 0
+
+        # Drop extra features from DataSet
+        X = X.drop(columns=extra_features)
+
+        # Make sure the features are in the correct order
+        X = X[model_features]
+        
+        # Data Preparation
+        X = X.values
+
+        # Get classification and probability from model
+        classification = int(model_1.predict(X).tolist()[0])
+        probability = 100*model_1.predict_proba(X)[0,1].tolist()
+
+        # Get id of current row
+        current_row_id = row.shooter_id
+
+        # Add classification and probability to row in database
+        update_record = session.query(analysis).filter(analysis.shooter_id == current_row_id).first()
+        update_record.Classification = classification
+        update_record.Probability = probability
+
+        # Commit changes
+        session.commit()
+
+	# Close session
+    session.close()
+
+    return 0
+
+
+def get_blackbox_data():
+    # Open session to the database
+    session = Session(bind=engine_blackbox)
+
+    # Get all data from table
+    all_rows = session.query(analysis)
+
+    # Create empty lists
+    rows_dicts = []
+
+	# Loop through the measurements
+    for row in all_rows:    
+    	# Add the data to a dictionary
+        mov_dict = create_data_dict(row)
+
+		# Append the data to the list of dictionary
+        rows_dicts.append(mov_dict)
+
+	# Close session
+    session.close()
+
+    return rows_dicts
+
+
 #########################################################
 # Flask Setup
 #########################################################
@@ -160,6 +306,44 @@ def api_home():
 #########################################################
 # Flask Static Routes
 #########################################################
+
+### GET DATA IN DATABASE
+@app.route("/api/v1.0/blackbox/get")
+def api_blackbox_get():
+    
+    rows_dicts = get_blackbox_data()
+
+    if len(rows_dicts) > 0:
+		# Return jsonified dictionary
+        return jsonify(rows_dicts)
+    else:
+        return jsonify({'Error': 'No data found.'})
+    
+@app.route("/api/v1.0/blackbox/count")
+def api_blackbox_count():
+    rows_dicts = get_blackbox_data()
+
+    return str(len(rows_dicts))
+    
+### RUN MODEL
+@app.route("/api/v1.0/blackbox/identify")
+def api_blackbox_identify():
+    print('Run BlackBox Model...')
+
+    # Run classification model on database table
+    predict_with_blackbox()
+
+    # Get all data from datavase
+    rows_dicts = get_blackbox_data()
+
+    # Return data as JSON
+    if len(rows_dicts) > 0:
+		# Return jsonified dictionary
+        return jsonify(rows_dicts)
+    else:
+        return jsonify({'Error': 'No data found.'})
+
+### CLEAR DATABASE
 @app.route("/api/v1.0/blackbox/clear")
 def api_blackbox_clear():
     # Open session to the database
@@ -193,8 +377,8 @@ def api_openbox(state, age_bracket, mental_illness, employment, arrest, autism):
 
     return jsonify({'Risk': total_tisk})
 
-@app.route("/api/v1.0/blackbox/<id>/<Age>/<Gender>/<Race>/<Immigrant>/<Education>/<RelStatus>/<Employed>/<Work>/<MilService>/<Arrested>/<ParentDivorce>/<SES>/<MentalIllness>/<MentalIllnessHistory>/<Autism>/<HealthIssues>")
-def api_blackbox(id, Age, Gender, Race, Immigrant, Education, RelStatus, Employed, Work, MilService, Arrested, ParentDivorce, SES, MentalIllness, MentalIllnessHistory, Autism, HealthIssues):
+@app.route("/api/v1.0/blackbox/<Age>/<Gender>/<Race>/<Immigrant>/<Education>/<RelStatus>/<Employed>/<Work>/<MilService>/<Arrested>/<ParentDivorce>/<SES>/<MentalIllness>/<MentalIllnessHistory>/<Autism>/<HealthIssues>")
+def api_blackbox(Age, Gender, Race, Immigrant, Education, RelStatus, Employed, Work, MilService, Arrested, ParentDivorce, SES, MentalIllness, MentalIllnessHistory, Autism, HealthIssues):
 
     # Add line to database
     # Open session to the database
@@ -206,8 +390,8 @@ def api_blackbox(id, Age, Gender, Race, Immigrant, Education, RelStatus, Employe
         Gender = Gender,
         Race = Race,
         Immigrant = Immigrant,
-        Education = Education,
-        RelStatus = RelStatus,
+        Education = Education.replace("+", "/"),
+        RelStatus = RelStatus.replace("+", "/"),
         Employed = Employed,
         Work = Work,
         MilService = MilService,
@@ -226,13 +410,7 @@ def api_blackbox(id, Age, Gender, Race, Immigrant, Education, RelStatus, Employe
     # Close session
     session.close()
 
-    # Run classification model
-    classification, probability = predict_with_blackbox(Age, Gender, Race, Immigrant, Education, RelStatus, Employed, Work, MilService, Arrested, ParentDivorce, SES, MentalIllness, MentalIllnessHistory, Autism, HealthIssues)
-
-    # Return classification (1 or 0) and probability of individual of being classified 1
-    return jsonify({'ID': id,
-                    'Classification': classification,
-                    'Probability': probability})
+    return "0"
 
 #########################################################
 # Run App
