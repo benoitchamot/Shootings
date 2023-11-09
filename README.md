@@ -3,9 +3,38 @@
 ## Prerequisites
 ### API keys
 To complete the ETL steps, the following APIs are used that need keys:
-- Create a module named config.py in /ETL with a variable called omdb_api_key containing your OMDB API key
-- Add a variable called api_census_key and containing your US census API key in config.py
+- Create a module named `config.py` in `/ETL`
+- Add a variable called `api_census_key` and containing your US census API key in `config.py`
 No prerequisites are needed to run the dashboard itself.
+
+## How to build the project from scratch (optional)
+The project contained in this repository is ready to run once the prerequesites are met.
+
+However, if you would like to start with a blank sheet, the following steps can be followed
+
+### Preparation
+- Delete all CSV files in `/clean_data`
+- Delete `blackbox_db.sqlite` and `openbox_db.sqlite` in `/Server`
+- Delete `blackbox.model` in `/Server`
+
+### Download the Violence Project Shooter Database
+The Violence Project Shooter Database can be accessed under non-commercial license and may not be distributed without the authors' consent. It is therefore not included in this repository.
+
+To run the project from sratch, the database must be added using the following steps:
+
+- Obtain the Database Version 7 (Updated June 2023) in XLSX format from https://www.theviolenceproject.org/ 
+- Convert the tab `Full Database` in the XLSX to a CSV file called `full_database.csv`
+- Add `full_database.csv` to `/raw_data`
+
+### ETL process (all notebooks are in `/ETL`)
+1. Run `ETL_shooters_data_to_csv.ipynb`, make sure that `clean_shooters.csv` is created in `/Datasets/clean_data`
+2. Run `ETL_autism_data_to_csv.ipynb`, make sure that `clean_autism.csv` is created in `/Datasets/clean_data`
+3. Run `ETL_census_data_to_csv.ipynb`, make sure that `clean_male_population_age.csv` is created in `/Datasets/clean_data` and `population_stats.csv` in `/ETL`
+4. Run `ETL_risks_to_openbox_db.ipynb`, make sure that `openbox_db.sqlite` is created in `/Server`
+5. Run `ETL_shooters_data_to_db.ipynb`, make sure that `openbox_db.sqlite` is created in `/Server` and `model_blackbox_shooters.csv` in `/Model`
+6. Run `Create_general_population_data.ipynb`, make sure that `model_blackbox_genpop.csv` is created in `/Model` (optionally, you can also create other CSV files in `/Examples`)
+
+### Model training (all notebooks are in `/Model`)
 
 ## How to run the Web App
 
