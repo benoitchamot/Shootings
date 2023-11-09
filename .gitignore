@@ -6,6 +6,9 @@
 /Model/*.csv
 /Examples/*.csv
 
+# Configuration files
+/ETL/config.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

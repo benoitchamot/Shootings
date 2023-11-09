@@ -1,4 +1,5 @@
 # Make America Safe... Again?
+Identify potential perpetratrors of mass shootings based on criminal and census information, and data about prevalence of mental illness and autism in the general US population.
 
 ## Prerequisites
 ### API keys
@@ -63,9 +64,13 @@ Please refer to the FAQ in the Web App: `/docs/faq.html`
 - `Model` contains the files used to design, train and test the Machine Learning models
 - `Server` contains the Flask code, the saved (pickled) models, the Python modules used in the Flask app, and the SQLite databases
 
-Please refer to the dataflow in the next section for more information about the features of the different files and how they are used to manipulate the data.
+Please refer to the ETL process and Model training sections above for more information about the different files and how they are used to manipulate the data.
 
-## Dataflow
+### Large files
+Some files are too large to be uploaded to this repository and are accessible from an S3 bucket instead:
+- <a href="https://makeamericasafeagain.s3.ap-southeast-2.amazonaws.com/model_blackbox_genpop.csv">model_blackbox_genpop.csv</a>, used to train the model. To be placed in `/Model`
+- <a href="https://makeamericasafeagain.s3.ap-southeast-2.amazonaws.com/model_blackbox_shooters.csv">model_blackbox_shooters.csv</a>, used to train the model. To be placed in `/Model`
+- <a href="https://makeamericasafeagain.s3.ap-southeast-2.amazonaws.com/Make+America+Safe+Again.pdf">Project presentation (PDF)</a>
 
 ## Analysis
 ### Research questions and approach
