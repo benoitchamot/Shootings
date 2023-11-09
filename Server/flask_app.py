@@ -171,6 +171,9 @@ def predict_with_blackbox():
     with open('blackbox.model','rb') as f:
         model_1 = pickle.load(f)
 
+    with open('../Server/blackbox.scaler','rb') as f:
+        X_scaler = pickle.load(f)
+
     # Open session to the database
     session = Session(bind=engine_blackbox)
 
@@ -192,8 +195,8 @@ def predict_with_blackbox():
         # Get features from dataset
         dataset_features = X.columns
 
-        # Get names of necessary features
-        model_features = model_1.feature_names_in_
+        # Get names of features
+        model_features = X_scaler.get_feature_names_out() 
 
         # Create empty list to store missing features
         missing_features = []
@@ -246,6 +249,9 @@ def predict_with_blackbox():
         
         # Data Preparation
         X = X.values
+
+        # Scale features
+        X = X_scaler.transform(X)
 
         # Get classification and probability from model
         classification = int(model_1.predict(X).tolist()[0])
