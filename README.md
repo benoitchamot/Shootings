@@ -35,6 +35,8 @@ To run the project from sratch, the database must be added using the following s
 6. Run `Create_general_population_data.ipynb`, make sure that `model_blackbox_genpop.csv` is created in `/Model` (optionally, you can also create other CSV files in `/Examples`)
 
 ### Model training (all notebooks are in `/Model`)
+1. Follow the ETL process (above) first and make sure all the necessary files are created as expected
+2. Run `Model_training.ipynb`, make sure that `blackbox.model` and `blackbox.scaler` are created in `/Model`
 
 ## How to run the Web App
 
