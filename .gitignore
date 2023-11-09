@@ -1,11 +1,12 @@
 # Data under license
-*.csv
+/raw_data/full_database.csv
+
+# Large files
+/raw_data/*.xlsx
+/Model/*.csv
 
 # Test and scratch files
 Scratch.ipynb
-
-# Large files
-raw_data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

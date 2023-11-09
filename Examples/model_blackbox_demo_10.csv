@@ -1,0 +1,10 @@
+Age,Gender,Race,Immigrant,Education,RelStatus,Employed,Work,MilService,Arrested,ParentDivorce,SES,MentalIllness,MentalIllnessHistory,Autism,HealthIssues,Classification
+35,Female,White,No,Less than high school,Single,Working,Blue collar,No,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,0
+5,Male,White,No,High school/GED,Single,Not working,Blue collar,No,No,Yes,Middle class,No evidence,No evidence,No evidence,No evidence,0
+24,Male,White,No,Some college/trade school,Married,Not Working,In between,No,No,Yes,Lower class,No evidence,Yes,No evidence,No evidence,0
+38,Female,Black,No,Less than high school,Divorced/separated/widowed,Not Working,Blue collar,No,No,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,0
+65,Male,White,No,Bachelor's degree,Boyfriend/girlfriend,Working,White collar,No,No,No evidence,Upper class,No evidence,No evidence,No evidence,No evidence,0
+48,Female,White,No,Graduate school/advanced degree,Married,Working,White collar,No,No,No evidence,Upper class,Yes,No evidence,No evidence,No evidence,0
+30,Male,White,No,Some college/trade school,Married,Not Working,In between,No,No,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,0
+19,Female,Latinx,No,Bachelor's degree,Divorced/separated/widowed,Working,White collar,No,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,0
+5,Female,White,No,Some college/trade school,Single,Not working,In between,No,No,No evidence,Upper class,No evidence,No evidence,No evidence,No evidence,0
