@@ -106,6 +106,10 @@ The model is called OpenBox due to the straightforward relationship between the 
 1. The risk factor is difficult to interpret compared to a binary classification
 2. The conditions are assumed to be independent which may not be the case in real life
 
+The OpenBox page (`/docs/index.html`) from the Web App is shown below:
+
+<img src="docs/static/img/screenshots/openbox.png" width="900px">
+
 ### Machine Learning approach (BlackBox)
 To compensate for the limitation of the OpenBox model, we develop a Machine Learning classifier that looks at more conditions.
 
@@ -123,6 +127,10 @@ The performance of the three models is shown below:
 <img src = "Model/performance.jpg" width="900px">
 
 While SVM provides the best results, logistic regression is used as it allows to provide direct probabiliy for each prediction.
+
+The BlackBox page (`/docs/balckbox.html`) from the Web App is shown below:
+
+<img src="docs/static/img/screenshots/blackbox.png" width="900px">
 
 ### Conclusions
 **What do the shooters have in common?**
