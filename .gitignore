@@ -1,3 +1,8 @@
+# Internal files
+*.pptx
+*.docx
+Presentations/
+
 # Data under license
 /Datasets/raw_data/full_database.csv
 

@@ -4,7 +4,7 @@ let n_rows = 0
 // Clear table
 function clearTable() {
 
-    // Deleyte rows in database
+    // Delete rows in database
     // Get classification and probability
     delete_url = 'http://127.0.0.1:5000/api/v1.0/blackbox/clear';
     d3.json(delete_url).then(function(error) {
