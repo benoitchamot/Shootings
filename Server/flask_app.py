@@ -379,9 +379,9 @@ def api_blackbox_clear():
 @app.route("/api/v1.0/openbox/<state>/<age_bracket>/<mental_illness>/<employment>/<arrest>/<autism>")
 def api_openbox(state, age_bracket, mental_illness, employment, arrest, autism):
 
-    total_tisk = openbox_get_risk(state, age_bracket, mental_illness, employment, arrest, autism)
+    total_risk = openbox_get_risk(state, age_bracket, mental_illness, employment, arrest, autism)
 
-    return jsonify({'Risk': total_tisk})
+    return jsonify({'Risk': total_risk})
 
 @app.route("/api/v1.0/blackbox/<Age>/<Gender>/<Race>/<Immigrant>/<Education>/<RelStatus>/<Employed>/<Work>/<MilService>/<Arrested>/<ParentDivorce>/<SES>/<MentalIllness>/<MentalIllnessHistory>/<Autism>/<HealthIssues>")
 def api_blackbox(Age, Gender, Race, Immigrant, Education, RelStatus, Employed, Work, MilService, Arrested, ParentDivorce, SES, MentalIllness, MentalIllnessHistory, Autism, HealthIssues):
