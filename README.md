@@ -1,6 +1,8 @@
 # Make America Safe... Again?
 Identify potential perpetratrors of mass shootings based on criminal and census information, and data about prevalence of mental illness and autism in the general US population.
 
+View presentation (Australian Demo Day - 17 Jan 2024): [PPTX on Google Drive](https://docs.google.com/presentation/d/13MrqrlIhT7vH0hHTW0JKVKEb5yz1gHyc/edit?usp=sharing&ouid=109555718351551281221&rtpof=true&sd=true)
+
 ## Prerequisites
 ### API keys
 To complete the ETL steps, the following APIs are used that need keys:
