@@ -1,6 +1,7 @@
 # Internal files
 *.pptx
 *.docx
+*.xlsx
 Presentations/
 
 # Data under license

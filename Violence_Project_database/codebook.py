@@ -111,9 +111,9 @@ codes_shooter_background_children = {
 
 # Employment status code
 codes_shooter_background_employstatus = {
-    '-1': 'Unknown',
-    '0': 'Not working',
-    '1': 'Working'
+    -1: 'Unknown',
+    0: 'No',
+    1: 'Yes'
 }
 
 # Employment type code
@@ -498,6 +498,7 @@ codes_shooter_health_treatment = {
 codes_shooter_health_illness = {
     '0': 'No evidence',
     '1': 'Mood disorder',
+    '1, 2': 'Mood disorder',
     '2': 'Thought disorder',
     '3': 'Other psychiatric disorder',
     '4': 'Indication of psychiatric disorder but no diagnosis'
@@ -511,9 +512,9 @@ codes_shooter_health_fasd = {
 
 # Known family history of mental health issues
 codes_shooter_health_family = {
-    '0': 'No evidence',
-    '1': 'Parents had mental health issues',
-    '2': 'Other close relatives had mental health issues'
+    0: 'No evidence',
+    1: 'Parents had mental health issues',
+    2: 'Other close relatives had mental health issues'
 }
 
 # Autism spectrum disorder
