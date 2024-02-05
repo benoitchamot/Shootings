@@ -1,198 +1,198 @@
 Age,Gender,Race,Immigrant,Education,RelStatus,Employed,Work,MilService,Arrested,ParentDivorce,SES,MentalIllness,MentalIllnessHistory,Autism,HealthIssues,Classification
-25,Male,White,No,Some college/trade school,Married,No,Unknown,Yes,Yes,No evidence,Middle class,Yes,No evidence,No evidence,Yes,1
-18,Male,White,No,Less than high school,Single,No,Unknown,No,No,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
-39,Male,White,No,Some college/trade school,Married,Yes,In between,Yes,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-56,Male,White,No,Unknown,Single,Yes,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-31,Male,Black,No,Some college/trade school,Married,No,In between,Yes,No,Yes,Middle class,Yes,No evidence,No evidence,No evidence,1
-25,Male,Black,No,Graduate school/advanced degree,Single,Yes,White collar,No,No,No evidence,Middle class,No evidence,No evidence,No evidence,Yes,1
-22,Male,Black,No,High school/GED,Married,Yes,Blue collar,No,Yes,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
-33,Male,White,No,Some college/trade school,Single,Yes,Blue collar,Yes,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-23,Male,Black,No,Some college/trade school,Single,No,Blue collar,Yes,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-21,Male,White,No,Unknown,Single,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,Yes,No evidence,No evidence,1
-37,Male,White,No,Unknown,Divorced/separated/widowed,Yes,Blue collar,Yes,No,No evidence,Lower class,Yes,Yes,No evidence,No evidence,1
-33,Male,White,No,Some college/trade school,Single,Yes,Blue collar,Yes,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-26,Male,White,No,Some college/trade school,Divorced/separated/widowed,No,Blue collar,Yes,No,Yes,Middle class,No evidence,No evidence,No evidence,Yes,1
-20,Male,White,No,High school/GED,Single,Yes,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,Yes,1
-48,Male,Other,Yes,Unknown,Married,Yes,Blue collar,No,No,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
-21,Male,White,No,Less than high school,Single,No,Unknown,No,Yes,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
-45,Male,White,No,Graduate school/advanced degree,Married,No,White collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-23,Male,White,No,Some college/trade school,Single,Yes,In between,Yes,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-25,Male,White,No,Unknown,Single,No,Blue collar,No,No,No evidence,Unknown,Yes,Yes,No evidence,No evidence,1
-70,Male,White,No,Unknown,Single,No,Blue collar,No,Yes,No evidence,Lower class,No evidence,No evidence,No evidence,Yes,1
-34,Male,White,No,Some college/trade school,Single,Yes,Blue collar,No,Yes,Yes,Middle class,Yes,Yes,No evidence,Yes,1
-46,Male,Black,No,Unknown,Divorced/separated/widowed,Yes,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-51,Male,White,No,Graduate school/advanced degree,Divorced/separated/widowed,No,White collar,Yes,No,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
-41,Male,White,No,Unknown,Single,Yes,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-39,Male,White,No,Unknown,Divorced/separated/widowed,No,In between,Yes,No,Yes,Lower class,Yes,No evidence,No evidence,Yes,1
-24,Male,Latinx,No,Less than high school,Divorced/separated/widowed,No,Blue collar,No,No,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
-25,Male,White,No,High school/GED,Single,No,Blue collar,Yes,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-39,Male,Other,Yes,Less than high school,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Lower class,Yes,No evidence,No evidence,Yes,1
-41,Male,White,No,Bachelor's degree,Married,No,Blue collar,No,Yes,Yes,Lower class,Yes,No evidence,No evidence,Yes,1
-33,Male,White,No,Unknown,Single,No,Unknown,No,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-39,Male,White,No,High school/GED,Married,Yes,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-44,Male,White,No,Some college/trade school,Single,Yes,Blue collar,Yes,No,No evidence,Lower class,No evidence,Yes,No evidence,No evidence,1
-60,Male,White,No,Graduate school/advanced degree,Married,No,Blue collar,No,Yes,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
-39,Male,White,No,Some college/trade school,Boyfriend/girlfriend,Yes,In between,Yes,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-24,Male,White,No,Unknown,Divorced/separated/widowed,Yes,Blue collar,No,Yes,Yes,Middle class,Yes,No evidence,No evidence,No evidence,1
-40,Male,Black,No,Unknown,Married,No,Blue collar,Yes,Yes,No evidence,Lower class,Yes,No evidence,No evidence,Yes,1
-24,Male,White,No,Some college/trade school,Single,No,Blue collar,No,Yes,Yes,Lower class,Yes,Yes,No evidence,Yes,1
-47,Male,White,No,High school/GED,Boyfriend/girlfriend,No,Blue collar,No,No,No evidence,Lower class,Yes,No evidence,No evidence,Yes,1
-42,Male,Black,No,Unknown,Divorced/separated/widowed,Yes,Blue collar,No,Yes,Yes,Lower class,No evidence,No evidence,No evidence,No evidence,1
-35,Male,Black,No,Unknown,Single,No,Blue collar,Yes,No,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
-35,Male,White,No,High school/GED,Single,No,Blue collar,Yes,Yes,No evidence,Upper class,No evidence,No evidence,No evidence,No evidence,1
-28,Male,Other,Yes,Graduate school/advanced degree,Single,No,White collar,No,No,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
-45,Male,White,No,Unknown,Divorced/separated/widowed,No,Unknown,Yes,Yes,No evidence,Unknown,Yes,No evidence,No evidence,Yes,1
-31,Male,White,No,High school/GED,Single,No,Blue collar,Yes,Yes,Yes,Middle class,No evidence,No evidence,No evidence,No evidence,1
-26,Male,White,No,Unknown,Single,Yes,Blue collar,No,No,Yes,Lower class,Yes,No evidence,No evidence,No evidence,1
-20,Male,White,No,Less than high school,Single,No,Blue collar,No,No,Yes,Lower class,Yes,Yes,No evidence,Yes,1
-50,Male,White,No,Unknown,Single,Yes,Blue collar,Yes,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-43,Male,White,No,Unknown,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,Yes,1
-55,Male,White,Yes,Graduate school/advanced degree,Divorced/separated/widowed,Yes,White collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-22,Male,White,No,Unknown,Boyfriend/girlfriend,Yes,Blue collar,Yes,No,No evidence,Lower class,No evidence,Yes,No evidence,No evidence,1
-19,Male,White,No,Some college/trade school,Single,No,Unknown,No,No,No evidence,Upper class,Yes,No evidence,No evidence,Yes,1
-33,Male,White,No,Bachelor's degree,Single,No,In between,No,No,No evidence,Middle class,Yes,Yes,No evidence,No evidence,1
-35,Male,Black,Yes,Some college/trade school,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Upper class,No evidence,No evidence,No evidence,Yes,1
-19,Male,Black,No,High school/GED,Boyfriend/girlfriend,Yes,Blue collar,No,Yes,Yes,Lower class,Yes,Yes,No evidence,Yes,1
-20,Male,White,No,Some college/trade school,Single,No,In between,Yes,No,No evidence,Middle class,Yes,No evidence,Yes,No evidence,1
-18,Male,Black,No,Less than high school,Single,No,Unknown,No,Yes,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
-28,Male,White,No,Some college/trade school,Single,No,In between,No,No,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
-42,Male,Black,No,Unknown,Boyfriend/girlfriend,Yes,Blue collar,Yes,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-22,Male,Black,No,Less than high school,Single,No,Unknown,No,Yes,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
-41,Male,Black,No,Unknown,Married,No,Blue collar,Yes,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-32,Male,Black,No,Unknown,Married,Yes,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-62,Male,White,No,Less than high school,Boyfriend/girlfriend,Yes,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-43,Male,Black,No,Some college/trade school,Single,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-59,Male,Latinx,Yes,Bachelor's degree,Married,Yes,White collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-41,Male,Latinx,Yes,High school/GED,Married,No,Blue collar,Yes,No,No evidence,Lower class,No evidence,No evidence,No evidence,Yes,1
-35,Male,White,No,Bachelor's degree,Single,Yes,White collar,No,No,No evidence,Middle class,Yes,No evidence,No evidence,Yes,1
-11,Male,White,No,Less than high school,Single,No,Unknown,No,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-13,Male,White,No,Less than high school,Single,No,Unknown,No,Yes,Yes,Lower class,No evidence,No evidence,No evidence,No evidence,1
-15,Male,White,No,Less than high school,Single,No,Unknown,No,Yes,No evidence,Upper class,Yes,Yes,No evidence,No evidence,1
-22,Male,Black,No,Less than high school,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
-17,Male,White,No,Less than high school,Single,Yes,Blue collar,No,Yes,No evidence,Middle class,Yes,No evidence,No evidence,Yes,1
-18,Male,White,No,Less than high school,Single,Yes,Blue collar,No,Yes,No evidence,Middle class,Yes,No evidence,No evidence,Yes,1
-23,Male,White,No,Some college/trade school,Boyfriend/girlfriend,Yes,Blue collar,Yes,No,Yes,Middle class,Yes,No evidence,No evidence,No evidence,1
-44,Male,White,No,Bachelor's degree,Divorced/separated/widowed,No,White collar,No,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-47,Male,White,No,Some college/trade school,Single,No,In between,Yes,Yes,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
-40,Male,Other,No,Some college/trade school,Single,Yes,In between,No,Yes,No evidence,Middle class,Yes,No evidence,No evidence,Yes,1
-36,Male,Latinx,Yes,Unknown,Single,Yes,Blue collar,No,Yes,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
-28,Male,Black,No,Less than high school,Single,No,Blue collar,No,No,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
-34,Male,White,No,Graduate school/advanced degree,Single,No,White collar,No,Yes,No evidence,Upper class,Yes,No evidence,No evidence,No evidence,1
-42,Male,Latinx,No,Some college/trade school,Boyfriend/girlfriend,Yes,In between,Yes,No,No evidence,Middle class,Yes,Yes,No evidence,Yes,1
-54,Male,Other,No,Unknown,Married,Yes,Blue collar,No,Yes,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
-66,Male,Black,No,High school/GED,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-42,Male,White,No,High school/GED,Single,No,Unknown,Yes,Yes,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
-20,Male,White,No,High school/GED,Single,Yes,Blue collar,No,No,Yes,Middle class,No evidence,No evidence,No evidence,No evidence,1
-54,Male,White,No,Unknown,Married,Yes,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-23,Male,Black,No,Unknown,Single,No,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-48,Male,White,No,Unknown,Boyfriend/girlfriend,Yes,Blue collar,No,No,No evidence,Unknown,Yes,No evidence,No evidence,Yes,1
-36,Male,Latinx,Yes,Unknown,Single,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-53,Male,White,No,Unknown,Divorced/separated/widowed,No,Unknown,No,No,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
-21,Male,White,No,Some college/trade school,Single,Yes,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-36,Male,Other,Yes,High school/GED,Married,Yes,Blue collar,Yes,Yes,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
-25,Male,White,No,Some college/trade school,Single,No,Blue collar,Yes,Yes,Yes,Middle class,Yes,No evidence,No evidence,No evidence,1
-33,Male,Black,No,Some college/trade school,Boyfriend/girlfriend,No,In between,No,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-44,Male,White,No,High school/GED,Single,Yes,In between,Yes,No,Yes,Middle class,Yes,No evidence,No evidence,Yes,1
-16,Male,Other,No,Less than high school,Single,No,Unknown,No,No,Yes,Lower class,Yes,Yes,No evidence,No evidence,1
-54,Male,White,No,Unknown,Single,No,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,Yes,1
-44,Female,White,No,Unknown,Single,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-28,Male,White,No,Some college/trade school,Single,No,Blue collar,No,Yes,Yes,Middle class,Yes,Yes,No evidence,No evidence,1
-25,Male,Black,No,Less than high school,Married,Yes,Blue collar,No,Yes,No evidence,Lower class,Yes,No evidence,No evidence,Yes,1
-32,Male,White,No,High school/GED,Married,Yes,Blue collar,No,No,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
-18,Male,White,Yes,Less than high school,Boyfriend/girlfriend,Yes,Blue collar,No,Yes,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
-23,Male,Other,Yes,Some college/trade school,Single,No,Unknown,No,No,No evidence,Lower class,Yes,Yes,Yes,Yes,1
-19,Male,White,No,High school/GED,Single,No,Blue collar,No,Yes,Yes,Middle class,Yes,No evidence,No evidence,No evidence,1
-24,Male,White,No,Some college/trade school,Single,No,Blue collar,No,No,No evidence,Upper class,Yes,No evidence,No evidence,No evidence,1
-52,Male,Black,No,Bachelor's degree,Married,Yes,In between,No,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-27,Male,White,No,Graduate school/advanced degree,Boyfriend/girlfriend,No,Blue collar,No,No,No evidence,Middle class,Yes,Yes,No evidence,No evidence,1
-31,Male,White,No,High school/GED,Single,No,Blue collar,No,Yes,Yes,Middle class,Yes,Yes,No evidence,No evidence,1
-25,Male,White,No,High school/GED,Boyfriend/girlfriend,Yes,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-28,Male,Latinx,No,Unknown,Single,No,Blue collar,No,Yes,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
-45,Male,White,No,Unknown,Divorced/separated/widowed,No,Blue collar,Yes,No,No evidence,Unknown,Yes,No evidence,No evidence,Yes,1
-41,Male,Other,Yes,Unknown,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
-29,Male,Latinx,Yes,Unknown,Boyfriend/girlfriend,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-39,Male,Other,No,Graduate school/advanced degree,Single,Yes,White collar,Yes,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-37,Male,Black,No,Less than high school,Married,No,Blue collar,No,Yes,Yes,Lower class,Yes,No evidence,No evidence,No evidence,1
-28,Male,Other,Yes,Unknown,Single,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-38,Male,Latinx,Yes,Unknown,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
-34,Male,Black,No,Some college/trade school,Boyfriend/girlfriend,No,Blue collar,No,No,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
-47,Male,White,No,Unknown,Married,No,Unknown,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,Yes,1
-22,Male,White,No,Some college/trade school,Single,No,Blue collar,No,Yes,No evidence,Middle class,Yes,Yes,No evidence,No evidence,1
-51,Male,White,No,High school/GED,Boyfriend/girlfriend,No,Unknown,No,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-32,Male,Latinx,Yes,High school/GED,Single,Yes,Blue collar,No,No,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
-41,Male,White,No,High school/GED,Divorced/separated/widowed,No,Blue collar,No,Yes,Yes,Upper class,Yes,Yes,No evidence,Yes,1
-43,Male,Other,Yes,Some college/trade school,Divorced/separated/widowed,No,Blue collar,No,No,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
-40,Male,White,No,High school/GED,Boyfriend/girlfriend,No,Blue collar,No,Yes,No evidence,Middle class,Yes,No evidence,Yes,Yes,1
-24,Male,White,No,Graduate school/advanced degree,Single,No,White collar,No,No,No evidence,Middle class,Yes,Yes,Yes,No evidence,1
-40,Male,White,No,High school/GED,Single,No,Blue collar,Yes,Yes,Yes,Middle class,No evidence,No evidence,No evidence,No evidence,1
-36,Male,White,No,High school/GED,Single,No,Blue collar,No,Yes,No evidence,Middle class,Yes,Yes,No evidence,No evidence,1
-20,Male,White,No,Some college/trade school,Single,No,Blue collar,No,No,Yes,Upper class,Yes,No evidence,Yes,Yes,1
-64,Male,White,No,Some college/trade school,Single,No,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-27,Male,Black,No,Some college/trade school,Boyfriend/girlfriend,No,Unknown,No,Yes,Yes,Unknown,No evidence,No evidence,No evidence,No evidence,1
-23,Male,Other,Yes,Some college/trade school,Single,No,Unknown,No,Yes,Yes,Upper class,No evidence,Yes,No evidence,No evidence,1
-42,Male,Latinx,Yes,Bachelor's degree,Boyfriend/girlfriend,No,In between,No,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-34,Male,Black,No,Some college/trade school,Single,Yes,In between,Yes,Yes,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
-44,Female,Other,No,Unknown,Single,Yes,Blue collar,No,No,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
-22,Male,Other,Yes,Some college/trade school,Single,No,Unknown,No,No,Yes,Upper class,Yes,No evidence,Yes,No evidence,1
-15,Male,Other,No,Less than high school,Boyfriend/girlfriend,No,Unknown,No,No,Yes,Lower class,No evidence,No evidence,No evidence,Yes,1
-21,Male,White,No,High school/GED,Single,No,Blue collar,No,Yes,Yes,Upper class,Yes,No evidence,Yes,No evidence,1
-24,Male,Other,Yes,Bachelor's degree,Single,Yes,Blue collar,No,Yes,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
-26,Male,Black,No,Some college/trade school,Single,No,Unknown,No,Yes,Yes,Lower class,Yes,No evidence,Yes,No evidence,1
-33,Male,White,No,High school/GED,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Middle class,Yes,No evidence,No evidence,Yes,1
-28,Male,Other,No,Graduate school/advanced degree,Married,Yes,In between,No,No,No evidence,Lower class,No evidence,Yes,No evidence,No evidence,1
-29,Female,Other,Yes,Bachelor's degree,Married,No,Unknown,No,No,No evidence,Upper class,No evidence,No evidence,No evidence,No evidence,1
-45,Male,White,No,Some college/trade school,Married,Yes,In between,No,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-29,Male,Other,No,Some college/trade school,Married,Yes,Blue collar,No,Yes,No evidence,Upper class,No evidence,Yes,No evidence,No evidence,1
-25,Male,Black,No,High school/GED,Single,Yes,Blue collar,Yes,Yes,Yes,Middle class,Yes,No evidence,No evidence,No evidence,1
-20,Male,Other,Yes,High school/GED,Single,Yes,Blue collar,No,Yes,Yes,Lower class,Yes,No evidence,Yes,Yes,1
-26,Male,Latinx,No,Some college/trade school,Boyfriend/girlfriend,No,Blue collar,Yes,Yes,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
-27,Male,Black,No,Unknown,Boyfriend/girlfriend,No,Unknown,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-45,Male,Other,Yes,Unknown,Divorced/separated/widowed,Yes,Blue collar,No,No,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
-45,Male,White,No,High school/GED,Single,No,Blue collar,Yes,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-64,Male,White,No,Bachelor's degree,Boyfriend/girlfriend,No,White collar,No,No,Yes,Lower class,Yes,Yes,No evidence,Yes,1
-26,Male,White,No,High school/GED,Married,Yes,In between,Yes,Yes,No evidence,Middle class,Yes,No evidence,No evidence,Yes,1
-44,Male,White,No,Some college/trade school,Married,Yes,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-28,Male,White,No,Some college/trade school,Single,Yes,Blue collar,No,No,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
-19,Male,White,No,Less than high school,Single,Yes,Blue collar,No,No,No evidence,Upper class,Yes,Yes,Yes,No evidence,1
-27,Male,Black,No,Unknown,Single,No,Unknown,No,Yes,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
-29,Male,White,No,High school/GED,Single,No,Blue collar,No,Yes,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
-17,Male,White,No,Less than high school,Single,No,Unknown,No,No,No evidence,Upper class,No evidence,Yes,No evidence,No evidence,1
-38,Male,Latinx,No,Bachelor's degree,Single,No,In between,No,Yes,No evidence,Middle class,No evidence,No evidence,Yes,Yes,1
-54,Male,Latinx,Yes,Unknown,Divorced/separated/widowed,Yes,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-46,Male,White,No,Less than high school,Single,Yes,Blue collar,No,No,Yes,Unknown,Yes,Yes,No evidence,Yes,1
-28,Male,White,No,Some college/trade school,Divorced/separated/widowed,No,Blue collar,Yes,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-21,Male,White,No,Some college/trade school,Single,No,Blue collar,No,No,Yes,Lower class,No evidence,No evidence,No evidence,No evidence,1
-45,Male,Black,No,Unknown,Boyfriend/girlfriend,No,Blue collar,No,Yes,Yes,Lower class,No evidence,No evidence,No evidence,No evidence,1
-40,Male,Black,No,Bachelor's degree,Divorced/separated/widowed,Yes,In between,Yes,No,Yes,Unknown,No evidence,No evidence,No evidence,No evidence,1
-21,Male,White,No,Some college/trade school,Single,No,Blue collar,No,No,Yes,Upper class,Yes,No evidence,No evidence,No evidence,1
-24,Male,White,No,Some college/trade school,Single,Yes,Blue collar,No,Yes,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
-36,Male,White,No,Some college/trade school,Single,No,Blue collar,No,Yes,Yes,Unknown,Yes,Yes,No evidence,No evidence,1
-23,Male,Latinx,No,Unknown,Single,No,Unknown,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-29,Male,Latinx,No,Unknown,Single,No,Unknown,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-47,Male,Black,No,Unknown,Boyfriend/girlfriend,No,Blue collar,Yes,Yes,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
-50,Female,Black,No,Unknown,Boyfriend/girlfriend,No,In between,No,No,No evidence,Lower class,No evidence,No evidence,No evidence,Yes,1
-51,Male,Black,No,Some college/trade school,Married,Yes,Blue collar,Yes,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,Yes,1
-31,Male,White,No,Some college/trade school,Single,Yes,White collar,No,Yes,No evidence,Upper class,No evidence,No evidence,No evidence,No evidence,1
-32,Male,Black,No,High school/GED,Boyfriend/girlfriend,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-21,Male,White,No,Some college/trade school,Single,Yes,Blue collar,No,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-21,Male,Other,Yes,High school/GED,Single,Yes,Blue collar,No,Yes,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
-44,Male,Latinx,No,Unknown,Divorced/separated/widowed,Yes,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-19,Male,White,No,Less than high school,Single,No,Blue collar,No,Yes,No evidence,Unknown,Yes,Yes,No evidence,No evidence,1
-57,Male,White,No,Some college/trade school,Divorced/separated/widowed,No,In between,No,Yes,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
-15,Male,White,No,Less than high school,Single,No,Unknown,No,No,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
-47,Male,White,No,High school/GED,Single,No,Blue collar,No,Yes,No evidence,Lower class,No evidence,No evidence,No evidence,Yes,1
-18,Male,White,No,Some college/trade school,Single,No,Blue collar,No,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-18,Male,Latinx,No,Less than high school,Single,No,Blue collar,No,No,Yes,Lower class,No evidence,No evidence,No evidence,Yes,1
-45,Male,Black,Yes,Bachelor's degree,Divorced/separated/widowed,No,Unknown,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,Yes,1
-21,Male,White,No,Less than high school,Single,No,Blue collar,No,No,Yes,Middle class,No evidence,Yes,No evidence,No evidence,1
-15,Male,White,No,Less than high school,Single,No,Unknown,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-22,Male,White,No,Less than high school,Single,No,Unknown,No,Yes,Yes,Lower class,No evidence,Yes,No evidence,No evidence,1
-31,Male,Black,No,Unknown,Single,Yes,Blue collar,No,No,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
-72,Male,Other,Yes,Unknown,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-66,Male,Other,Yes,Unknown,Married,Yes,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-28,Other,White,No,Bachelor's degree,Single,Yes,White collar,No,No,No evidence,Upper class,Yes,No evidence,Yes,No evidence,1
-25,Male,White,No,Graduate school/advanced degree,Boyfriend/girlfriend,Yes,White collar,No,No,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
-33,Male,Latinx,No,Unknown,Single,No,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
-40,Male,Black,No,Some college/trade school,Single,No,White collar,No,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
-40,Male,Black,Yes,High school/GED,Single,No,White collar,Yes,No,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
-40,Male,White,No,Some college/trade school,Divorced/separated/widowed,No,Blue collar,Yes,Yes,No evidence,Upper class,Yes,No evidence,No evidence,Yes,1
+25,Yes,White,No,Some college/trade school,Married,No,Unknown,Yes,Yes,No evidence,Middle class,Yes,No evidence,No evidence,Yes,1
+18,Yes,White,No,Less than high school,Single,No,Unknown,No,No,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
+39,Yes,White,No,Some college/trade school,Married,Yes,In between,Yes,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+56,Yes,White,No,Unknown,Single,Yes,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+31,Yes,Black,No,Some college/trade school,Married,No,In between,Yes,No,Yes,Middle class,Yes,No evidence,No evidence,No evidence,1
+25,Yes,Black,No,Graduate school/advanced degree,Single,Yes,White collar,No,No,No evidence,Middle class,No evidence,No evidence,No evidence,Yes,1
+22,Yes,Black,No,High school/GED,Married,Yes,Blue collar,No,Yes,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
+33,Yes,White,No,Some college/trade school,Single,Yes,Blue collar,Yes,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+23,Yes,Black,No,Some college/trade school,Single,No,Blue collar,Yes,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+21,Yes,White,No,Unknown,Single,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,Yes,No evidence,No evidence,1
+37,Yes,White,No,Unknown,Divorced/separated/widowed,Yes,Blue collar,Yes,No,No evidence,Lower class,Yes,Yes,No evidence,No evidence,1
+33,Yes,White,No,Some college/trade school,Single,Yes,Blue collar,Yes,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+26,Yes,White,No,Some college/trade school,Divorced/separated/widowed,No,Blue collar,Yes,No,Yes,Middle class,No evidence,No evidence,No evidence,Yes,1
+20,Yes,White,No,High school/GED,Single,Yes,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,Yes,1
+48,Yes,Other,Yes,Unknown,Married,Yes,Blue collar,No,No,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
+21,Yes,White,No,Less than high school,Single,No,Unknown,No,Yes,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
+45,Yes,White,No,Graduate school/advanced degree,Married,No,White collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+23,Yes,White,No,Some college/trade school,Single,Yes,In between,Yes,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+25,Yes,White,No,Unknown,Single,No,Blue collar,No,No,No evidence,Unknown,Yes,Yes,No evidence,No evidence,1
+70,Yes,White,No,Unknown,Single,No,Blue collar,No,Yes,No evidence,Lower class,No evidence,No evidence,No evidence,Yes,1
+34,Yes,White,No,Some college/trade school,Single,Yes,Blue collar,No,Yes,Yes,Middle class,Yes,Yes,No evidence,Yes,1
+46,Yes,Black,No,Unknown,Divorced/separated/widowed,Yes,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+51,Yes,White,No,Graduate school/advanced degree,Divorced/separated/widowed,No,White collar,Yes,No,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
+41,Yes,White,No,Unknown,Single,Yes,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+39,Yes,White,No,Unknown,Divorced/separated/widowed,No,In between,Yes,No,Yes,Lower class,Yes,No evidence,No evidence,Yes,1
+24,Yes,Latinx,No,Less than high school,Divorced/separated/widowed,No,Blue collar,No,No,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
+25,Yes,White,No,High school/GED,Single,No,Blue collar,Yes,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+39,Yes,Other,Yes,Less than high school,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Lower class,Yes,No evidence,No evidence,Yes,1
+41,Yes,White,No,Bachelor's degree,Married,No,Blue collar,No,Yes,Yes,Lower class,Yes,No evidence,No evidence,Yes,1
+33,Yes,White,No,Unknown,Single,No,Unknown,No,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+39,Yes,White,No,High school/GED,Married,Yes,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+44,Yes,White,No,Some college/trade school,Single,Yes,Blue collar,Yes,No,No evidence,Lower class,No evidence,Yes,No evidence,No evidence,1
+60,Yes,White,No,Graduate school/advanced degree,Married,No,Blue collar,No,Yes,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
+39,Yes,White,No,Some college/trade school,Boyfriend/girlfriend,Yes,In between,Yes,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+24,Yes,White,No,Unknown,Divorced/separated/widowed,Yes,Blue collar,No,Yes,Yes,Middle class,Yes,No evidence,No evidence,No evidence,1
+40,Yes,Black,No,Unknown,Married,No,Blue collar,Yes,Yes,No evidence,Lower class,Yes,No evidence,No evidence,Yes,1
+24,Yes,White,No,Some college/trade school,Single,No,Blue collar,No,Yes,Yes,Lower class,Yes,Yes,No evidence,Yes,1
+47,Yes,White,No,High school/GED,Boyfriend/girlfriend,No,Blue collar,No,No,No evidence,Lower class,Yes,No evidence,No evidence,Yes,1
+42,Yes,Black,No,Unknown,Divorced/separated/widowed,Yes,Blue collar,No,Yes,Yes,Lower class,No evidence,No evidence,No evidence,No evidence,1
+35,Yes,Black,No,Unknown,Single,No,Blue collar,Yes,No,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
+35,Yes,White,No,High school/GED,Single,No,Blue collar,Yes,Yes,No evidence,Upper class,No evidence,No evidence,No evidence,No evidence,1
+28,Yes,Other,Yes,Graduate school/advanced degree,Single,No,White collar,No,No,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
+45,Yes,White,No,Unknown,Divorced/separated/widowed,No,Unknown,Yes,Yes,No evidence,Unknown,Yes,No evidence,No evidence,Yes,1
+31,Yes,White,No,High school/GED,Single,No,Blue collar,Yes,Yes,Yes,Middle class,No evidence,No evidence,No evidence,No evidence,1
+26,Yes,White,No,Unknown,Single,Yes,Blue collar,No,No,Yes,Lower class,Yes,No evidence,No evidence,No evidence,1
+20,Yes,White,No,Less than high school,Single,No,Blue collar,No,No,Yes,Lower class,Yes,Yes,No evidence,Yes,1
+50,Yes,White,No,Unknown,Single,Yes,Blue collar,Yes,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+43,Yes,White,No,Unknown,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,Yes,1
+55,Yes,White,Yes,Graduate school/advanced degree,Divorced/separated/widowed,Yes,White collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+22,Yes,White,No,Unknown,Boyfriend/girlfriend,Yes,Blue collar,Yes,No,No evidence,Lower class,No evidence,Yes,No evidence,No evidence,1
+19,Yes,White,No,Some college/trade school,Single,No,Unknown,No,No,No evidence,Upper class,Yes,No evidence,No evidence,Yes,1
+33,Yes,White,No,Bachelor's degree,Single,No,In between,No,No,No evidence,Middle class,Yes,Yes,No evidence,No evidence,1
+35,Yes,Black,Yes,Some college/trade school,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Upper class,No evidence,No evidence,No evidence,Yes,1
+19,Yes,Black,No,High school/GED,Boyfriend/girlfriend,Yes,Blue collar,No,Yes,Yes,Lower class,Yes,Yes,No evidence,Yes,1
+20,Yes,White,No,Some college/trade school,Single,No,In between,Yes,No,No evidence,Middle class,Yes,No evidence,Yes,No evidence,1
+18,Yes,Black,No,Less than high school,Single,No,Unknown,No,Yes,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
+28,Yes,White,No,Some college/trade school,Single,No,In between,No,No,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
+42,Yes,Black,No,Unknown,Boyfriend/girlfriend,Yes,Blue collar,Yes,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+22,Yes,Black,No,Less than high school,Single,No,Unknown,No,Yes,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
+41,Yes,Black,No,Unknown,Married,No,Blue collar,Yes,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+32,Yes,Black,No,Unknown,Married,Yes,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+62,Yes,White,No,Less than high school,Boyfriend/girlfriend,Yes,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+43,Yes,Black,No,Some college/trade school,Single,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+59,Yes,Latinx,Yes,Bachelor's degree,Married,Yes,White collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+41,Yes,Latinx,Yes,High school/GED,Married,No,Blue collar,Yes,No,No evidence,Lower class,No evidence,No evidence,No evidence,Yes,1
+35,Yes,White,No,Bachelor's degree,Single,Yes,White collar,No,No,No evidence,Middle class,Yes,No evidence,No evidence,Yes,1
+11,Yes,White,No,Less than high school,Single,No,Unknown,No,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+13,Yes,White,No,Less than high school,Single,No,Unknown,No,Yes,Yes,Lower class,No evidence,No evidence,No evidence,No evidence,1
+15,Yes,White,No,Less than high school,Single,No,Unknown,No,Yes,No evidence,Upper class,Yes,Yes,No evidence,No evidence,1
+22,Yes,Black,No,Less than high school,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
+17,Yes,White,No,Less than high school,Single,Yes,Blue collar,No,Yes,No evidence,Middle class,Yes,No evidence,No evidence,Yes,1
+18,Yes,White,No,Less than high school,Single,Yes,Blue collar,No,Yes,No evidence,Middle class,Yes,No evidence,No evidence,Yes,1
+23,Yes,White,No,Some college/trade school,Boyfriend/girlfriend,Yes,Blue collar,Yes,No,Yes,Middle class,Yes,No evidence,No evidence,No evidence,1
+44,Yes,White,No,Bachelor's degree,Divorced/separated/widowed,No,White collar,No,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+47,Yes,White,No,Some college/trade school,Single,No,In between,Yes,Yes,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
+40,Yes,Other,No,Some college/trade school,Single,Yes,In between,No,Yes,No evidence,Middle class,Yes,No evidence,No evidence,Yes,1
+36,Yes,Latinx,Yes,Unknown,Single,Yes,Blue collar,No,Yes,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
+28,Yes,Black,No,Less than high school,Single,No,Blue collar,No,No,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
+34,Yes,White,No,Graduate school/advanced degree,Single,No,White collar,No,Yes,No evidence,Upper class,Yes,No evidence,No evidence,No evidence,1
+42,Yes,Latinx,No,Some college/trade school,Boyfriend/girlfriend,Yes,In between,Yes,No,No evidence,Middle class,Yes,Yes,No evidence,Yes,1
+54,Yes,Other,No,Unknown,Married,Yes,Blue collar,No,Yes,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
+66,Yes,Black,No,High school/GED,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+42,Yes,White,No,High school/GED,Single,No,Unknown,Yes,Yes,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
+20,Yes,White,No,High school/GED,Single,Yes,Blue collar,No,No,Yes,Middle class,No evidence,No evidence,No evidence,No evidence,1
+54,Yes,White,No,Unknown,Married,Yes,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+23,Yes,Black,No,Unknown,Single,No,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+48,Yes,White,No,Unknown,Boyfriend/girlfriend,Yes,Blue collar,No,No,No evidence,Unknown,Yes,No evidence,No evidence,Yes,1
+36,Yes,Latinx,Yes,Unknown,Single,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+53,Yes,White,No,Unknown,Divorced/separated/widowed,No,Unknown,No,No,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
+21,Yes,White,No,Some college/trade school,Single,Yes,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+36,Yes,Other,Yes,High school/GED,Married,Yes,Blue collar,Yes,Yes,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
+25,Yes,White,No,Some college/trade school,Single,No,Blue collar,Yes,Yes,Yes,Middle class,Yes,No evidence,No evidence,No evidence,1
+33,Yes,Black,No,Some college/trade school,Boyfriend/girlfriend,No,In between,No,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+44,Yes,White,No,High school/GED,Single,Yes,In between,Yes,No,Yes,Middle class,Yes,No evidence,No evidence,Yes,1
+16,Yes,Other,No,Less than high school,Single,No,Unknown,No,No,Yes,Lower class,Yes,Yes,No evidence,No evidence,1
+54,Yes,White,No,Unknown,Single,No,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,Yes,1
+44,No,White,No,Unknown,Single,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+28,Yes,White,No,Some college/trade school,Single,No,Blue collar,No,Yes,Yes,Middle class,Yes,Yes,No evidence,No evidence,1
+25,Yes,Black,No,Less than high school,Married,Yes,Blue collar,No,Yes,No evidence,Lower class,Yes,No evidence,No evidence,Yes,1
+32,Yes,White,No,High school/GED,Married,Yes,Blue collar,No,No,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
+18,Yes,White,Yes,Less than high school,Boyfriend/girlfriend,Yes,Blue collar,No,Yes,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
+23,Yes,Other,Yes,Some college/trade school,Single,No,Unknown,No,No,No evidence,Lower class,Yes,Yes,Yes,Yes,1
+19,Yes,White,No,High school/GED,Single,No,Blue collar,No,Yes,Yes,Middle class,Yes,No evidence,No evidence,No evidence,1
+24,Yes,White,No,Some college/trade school,Single,No,Blue collar,No,No,No evidence,Upper class,Yes,No evidence,No evidence,No evidence,1
+52,Yes,Black,No,Bachelor's degree,Married,Yes,In between,No,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+27,Yes,White,No,Graduate school/advanced degree,Boyfriend/girlfriend,No,Blue collar,No,No,No evidence,Middle class,Yes,Yes,No evidence,No evidence,1
+31,Yes,White,No,High school/GED,Single,No,Blue collar,No,Yes,Yes,Middle class,Yes,Yes,No evidence,No evidence,1
+25,Yes,White,No,High school/GED,Boyfriend/girlfriend,Yes,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+28,Yes,Latinx,No,Unknown,Single,No,Blue collar,No,Yes,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
+45,Yes,White,No,Unknown,Divorced/separated/widowed,No,Blue collar,Yes,No,No evidence,Unknown,Yes,No evidence,No evidence,Yes,1
+41,Yes,Other,Yes,Unknown,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
+29,Yes,Latinx,Yes,Unknown,Boyfriend/girlfriend,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+39,Yes,Other,No,Graduate school/advanced degree,Single,Yes,White collar,Yes,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+37,Yes,Black,No,Less than high school,Married,No,Blue collar,No,Yes,Yes,Lower class,Yes,No evidence,No evidence,No evidence,1
+28,Yes,Other,Yes,Unknown,Single,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+38,Yes,Latinx,Yes,Unknown,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
+34,Yes,Black,No,Some college/trade school,Boyfriend/girlfriend,No,Blue collar,No,No,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
+47,Yes,White,No,Unknown,Married,No,Unknown,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,Yes,1
+22,Yes,White,No,Some college/trade school,Single,No,Blue collar,No,Yes,No evidence,Middle class,Yes,Yes,No evidence,No evidence,1
+51,Yes,White,No,High school/GED,Boyfriend/girlfriend,No,Unknown,No,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+32,Yes,Latinx,Yes,High school/GED,Single,Yes,Blue collar,No,No,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
+41,Yes,White,No,High school/GED,Divorced/separated/widowed,No,Blue collar,No,Yes,Yes,Upper class,Yes,Yes,No evidence,Yes,1
+43,Yes,Other,Yes,Some college/trade school,Divorced/separated/widowed,No,Blue collar,No,No,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
+40,Yes,White,No,High school/GED,Boyfriend/girlfriend,No,Blue collar,No,Yes,No evidence,Middle class,Yes,No evidence,Yes,Yes,1
+24,Yes,White,No,Graduate school/advanced degree,Single,No,White collar,No,No,No evidence,Middle class,Yes,Yes,Yes,No evidence,1
+40,Yes,White,No,High school/GED,Single,No,Blue collar,Yes,Yes,Yes,Middle class,No evidence,No evidence,No evidence,No evidence,1
+36,Yes,White,No,High school/GED,Single,No,Blue collar,No,Yes,No evidence,Middle class,Yes,Yes,No evidence,No evidence,1
+20,Yes,White,No,Some college/trade school,Single,No,Blue collar,No,No,Yes,Upper class,Yes,No evidence,Yes,Yes,1
+64,Yes,White,No,Some college/trade school,Single,No,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+27,Yes,Black,No,Some college/trade school,Boyfriend/girlfriend,No,Unknown,No,Yes,Yes,Unknown,No evidence,No evidence,No evidence,No evidence,1
+23,Yes,Other,Yes,Some college/trade school,Single,No,Unknown,No,Yes,Yes,Upper class,No evidence,Yes,No evidence,No evidence,1
+42,Yes,Latinx,Yes,Bachelor's degree,Boyfriend/girlfriend,No,In between,No,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+34,Yes,Black,No,Some college/trade school,Single,Yes,In between,Yes,Yes,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
+44,No,Other,No,Unknown,Single,Yes,Blue collar,No,No,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
+22,Yes,Other,Yes,Some college/trade school,Single,No,Unknown,No,No,Yes,Upper class,Yes,No evidence,Yes,No evidence,1
+15,Yes,Other,No,Less than high school,Boyfriend/girlfriend,No,Unknown,No,No,Yes,Lower class,No evidence,No evidence,No evidence,Yes,1
+21,Yes,White,No,High school/GED,Single,No,Blue collar,No,Yes,Yes,Upper class,Yes,No evidence,Yes,No evidence,1
+24,Yes,Other,Yes,Bachelor's degree,Single,Yes,Blue collar,No,Yes,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
+26,Yes,Black,No,Some college/trade school,Single,No,Unknown,No,Yes,Yes,Lower class,Yes,No evidence,Yes,No evidence,1
+33,Yes,White,No,High school/GED,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Middle class,Yes,No evidence,No evidence,Yes,1
+28,Yes,Other,No,Graduate school/advanced degree,Married,Yes,In between,No,No,No evidence,Lower class,No evidence,Yes,No evidence,No evidence,1
+29,No,Other,Yes,Bachelor's degree,Married,No,Unknown,No,No,No evidence,Upper class,No evidence,No evidence,No evidence,No evidence,1
+45,Yes,White,No,Some college/trade school,Married,Yes,In between,No,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+29,Yes,Other,No,Some college/trade school,Married,Yes,Blue collar,No,Yes,No evidence,Upper class,No evidence,Yes,No evidence,No evidence,1
+25,Yes,Black,No,High school/GED,Single,Yes,Blue collar,Yes,Yes,Yes,Middle class,Yes,No evidence,No evidence,No evidence,1
+20,Yes,Other,Yes,High school/GED,Single,Yes,Blue collar,No,Yes,Yes,Lower class,Yes,No evidence,Yes,Yes,1
+26,Yes,Latinx,No,Some college/trade school,Boyfriend/girlfriend,No,Blue collar,Yes,Yes,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
+27,Yes,Black,No,Unknown,Boyfriend/girlfriend,No,Unknown,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+45,Yes,Other,Yes,Unknown,Divorced/separated/widowed,Yes,Blue collar,No,No,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
+45,Yes,White,No,High school/GED,Single,No,Blue collar,Yes,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+64,Yes,White,No,Bachelor's degree,Boyfriend/girlfriend,No,White collar,No,No,Yes,Lower class,Yes,Yes,No evidence,Yes,1
+26,Yes,White,No,High school/GED,Married,Yes,In between,Yes,Yes,No evidence,Middle class,Yes,No evidence,No evidence,Yes,1
+44,Yes,White,No,Some college/trade school,Married,Yes,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+28,Yes,White,No,Some college/trade school,Single,Yes,Blue collar,No,No,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
+19,Yes,White,No,Less than high school,Single,Yes,Blue collar,No,No,No evidence,Upper class,Yes,Yes,Yes,No evidence,1
+27,Yes,Black,No,Unknown,Single,No,Unknown,No,Yes,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
+29,Yes,White,No,High school/GED,Single,No,Blue collar,No,Yes,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
+17,Yes,White,No,Less than high school,Single,No,Unknown,No,No,No evidence,Upper class,No evidence,Yes,No evidence,No evidence,1
+38,Yes,Latinx,No,Bachelor's degree,Single,No,In between,No,Yes,No evidence,Middle class,No evidence,No evidence,Yes,Yes,1
+54,Yes,Latinx,Yes,Unknown,Divorced/separated/widowed,Yes,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+46,Yes,White,No,Less than high school,Single,Yes,Blue collar,No,No,Yes,Unknown,Yes,Yes,No evidence,Yes,1
+28,Yes,White,No,Some college/trade school,Divorced/separated/widowed,No,Blue collar,Yes,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+21,Yes,White,No,Some college/trade school,Single,No,Blue collar,No,No,Yes,Lower class,No evidence,No evidence,No evidence,No evidence,1
+45,Yes,Black,No,Unknown,Boyfriend/girlfriend,No,Blue collar,No,Yes,Yes,Lower class,No evidence,No evidence,No evidence,No evidence,1
+40,Yes,Black,No,Bachelor's degree,Divorced/separated/widowed,Yes,In between,Yes,No,Yes,Unknown,No evidence,No evidence,No evidence,No evidence,1
+21,Yes,White,No,Some college/trade school,Single,No,Blue collar,No,No,Yes,Upper class,Yes,No evidence,No evidence,No evidence,1
+24,Yes,White,No,Some college/trade school,Single,Yes,Blue collar,No,Yes,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
+36,Yes,White,No,Some college/trade school,Single,No,Blue collar,No,Yes,Yes,Unknown,Yes,Yes,No evidence,No evidence,1
+23,Yes,Latinx,No,Unknown,Single,No,Unknown,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+29,Yes,Latinx,No,Unknown,Single,No,Unknown,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+47,Yes,Black,No,Unknown,Boyfriend/girlfriend,No,Blue collar,Yes,Yes,No evidence,Lower class,No evidence,No evidence,No evidence,No evidence,1
+50,No,Black,No,Unknown,Boyfriend/girlfriend,No,In between,No,No,No evidence,Lower class,No evidence,No evidence,No evidence,Yes,1
+51,Yes,Black,No,Some college/trade school,Married,Yes,Blue collar,Yes,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,Yes,1
+31,Yes,White,No,Some college/trade school,Single,Yes,White collar,No,Yes,No evidence,Upper class,No evidence,No evidence,No evidence,No evidence,1
+32,Yes,Black,No,High school/GED,Boyfriend/girlfriend,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+21,Yes,White,No,Some college/trade school,Single,Yes,Blue collar,No,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+21,Yes,Other,Yes,High school/GED,Single,Yes,Blue collar,No,Yes,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
+44,Yes,Latinx,No,Unknown,Divorced/separated/widowed,Yes,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+19,Yes,White,No,Less than high school,Single,No,Blue collar,No,Yes,No evidence,Unknown,Yes,Yes,No evidence,No evidence,1
+57,Yes,White,No,Some college/trade school,Divorced/separated/widowed,No,In between,No,Yes,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
+15,Yes,White,No,Less than high school,Single,No,Unknown,No,No,No evidence,Lower class,Yes,No evidence,No evidence,No evidence,1
+47,Yes,White,No,High school/GED,Single,No,Blue collar,No,Yes,No evidence,Lower class,No evidence,No evidence,No evidence,Yes,1
+18,Yes,White,No,Some college/trade school,Single,No,Blue collar,No,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+18,Yes,Latinx,No,Less than high school,Single,No,Blue collar,No,No,Yes,Lower class,No evidence,No evidence,No evidence,Yes,1
+45,Yes,Black,Yes,Bachelor's degree,Divorced/separated/widowed,No,Unknown,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,Yes,1
+21,Yes,White,No,Less than high school,Single,No,Blue collar,No,No,Yes,Middle class,No evidence,Yes,No evidence,No evidence,1
+15,Yes,White,No,Less than high school,Single,No,Unknown,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+22,Yes,White,No,Less than high school,Single,No,Unknown,No,Yes,Yes,Lower class,No evidence,Yes,No evidence,No evidence,1
+31,Yes,Black,No,Unknown,Single,Yes,Blue collar,No,No,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
+72,Yes,Other,Yes,Unknown,Divorced/separated/widowed,No,Blue collar,No,Yes,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+66,Yes,Other,Yes,Unknown,Married,Yes,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+28,No,White,No,Bachelor's degree,Single,Yes,White collar,No,No,No evidence,Upper class,Yes,No evidence,Yes,No evidence,1
+25,Yes,White,No,Graduate school/advanced degree,Boyfriend/girlfriend,Yes,White collar,No,No,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
+33,Yes,Latinx,No,Unknown,Single,No,Blue collar,No,No,No evidence,Unknown,No evidence,No evidence,No evidence,No evidence,1
+40,Yes,Black,No,Some college/trade school,Single,No,White collar,No,Yes,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
+40,Yes,Black,Yes,High school/GED,Single,No,White collar,Yes,No,No evidence,Unknown,Yes,No evidence,No evidence,No evidence,1
+40,Yes,White,No,Some college/trade school,Divorced/separated/widowed,No,Blue collar,Yes,Yes,No evidence,Upper class,Yes,No evidence,No evidence,Yes,1

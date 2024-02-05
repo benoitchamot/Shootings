@@ -24,10 +24,10 @@ def get_distribution(df, field, codes):
 ###### BACKGROUND ######################################################
 # Gender codes
 codes_shooter_background_gender = {
-     0: 'Male',
-     1: 'Female',
-     3: 'Non-Binary',
-     4: 'Transgender'
+     0: 'Yes', # Male
+     1: 'No', # Fenale
+     3: 'No', # Non-Binary
+     4: 'No' # Transgender
 }
 
 # Race codes
