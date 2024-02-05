@@ -1,4 +1,4 @@
-Age,Gender,Race,Immigrant,Education,RelStatus,Employed,Work,MilService,Arrested,ParentDivorce,SES,MentalIllness,MentalIllnessHistory,Autism,HealthIssues,Classification
+Age,Male,Race,Immigrant,Education,RelStatus,Employed,Work,MilService,Arrested,ParentDivorce,SES,MentalIllness,MentalIllnessHistory,Autism,HealthIssues,Classification
 25,Yes,White,No,Some college/trade school,Married,No,Unknown,Yes,Yes,No evidence,Middle class,Yes,No evidence,No evidence,Yes,1
 18,Yes,White,No,Less than high school,Single,No,Unknown,No,No,No evidence,Middle class,Yes,No evidence,No evidence,No evidence,1
 39,Yes,White,No,Some college/trade school,Married,Yes,In between,Yes,No,No evidence,Middle class,No evidence,No evidence,No evidence,No evidence,1
